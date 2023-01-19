@@ -3963,6 +3963,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   padding: 0 17px;
+
 }
 
 .slider-bg__card {
@@ -3972,6 +3973,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 28px 10px 28px 30px;
   background: #7EAF00;
   color: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .slider-bg__card-title {
@@ -3987,17 +3990,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-weight: 500;
 }
 
+
 .slider-bg__card_01 {
   border-radius: 25px 0 0 0;
+  background-image: url(../img/banner_blk_bg_1.svg);
+  background-position: left center;
 }
+
+.slider-bg__card_02 {
+    background-image: url(../img/banner_blk_bg_2.svg);
+    background-size: cover;
+}
+
+
+.slider-bg__card_03 {
+    background-image: url(../img/banner_blk_bg_3.svg);
+}
+
 
 .slider-bg__card_04 {
   border-radius: 0 0 25px 0;
+  background-image: url(../img/banner_blk_bg_4.svg);
+  background-size:  auto 100%;
+  background-position: 150% 0;
 }
 
 .slider-bg-pagination-fraction {
   position: absolute;
-  top: 35%;
+  top: calc(50% - 345px);
   right: 15px;
   left:unset;
   width:unset;
@@ -4300,8 +4320,39 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi45NjkiIGhlaWdodD0iMTIuMTc2IiB2aWV3Qm94PSIwIDAgMTYuOTY5IDEyLjE3NiI+DQogIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF80OCIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCA0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM1NjguOTEyIC0yMzY4LjY5MSkiPg0KICAgIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF80NyIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCA0NyI+DQogICAgICA8bGluZSBpZD0i0JvQuNC90LjRj18xNCIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDE0IiB4Mj0iNC43MDMiIHkyPSI0LjY3OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzU3OS43NjQgMjM3MC4xMDUpIiBmaWxsPSIjN2VhZjAwIiBzdHJva2U9IiM3ZWFmMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgICA8bGluZSBpZD0i0JvQuNC90LjRj18xNSIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDE1IiB4MT0iNC43MDMiIHkyPSI0LjY3OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzU3OS43NjQgMjM3NC43NzQpIiBmaWxsPSIjN2VhZjAwIiBzdHJva2U9IiM3ZWFmMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgPC9nPg0KICAgIDxsaW5lIGlkPSLQm9C40L3QuNGPXzE2IiBkYXRhLW5hbWU9ItCb0LjQvdC40Y8gMTYiIHgyPSIxMi4yMDQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1NjkuOTEyIDIzNzQuNzc5KSIgZmlsbD0iIzdlYWYwMCIgc3Ryb2tlPSIjN2VhZjAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8L2c+DQo8L3N2Zz4NCg==");
 }
 
+/* Карьера на главной */
+
+.jobs-agro .bg_left{
+    background-image: url(../img/bg_vk_contur_1.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    left: 0;
+}
+
+.jobs-agro .bg_right{
+    background-image: url(../img/bg_vk_contur_2.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    right:0;
+}
+
+.jobs-agro .jobs-agro_bg{
+    position: absolute;
+    height: 100%;
+    width:30%;
+    z-index: 0;
+}
+
+.jobs-agro ._container{
+    z-index: 2;
+    position: relative;
+}
+
 .jobs-agro {
   background: #435A33;
+  position: relative;
 }
 
 .jobs-agro__inner {
@@ -4341,6 +4392,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-radius: 20px 0 20px 0;
   overflow: hidden;
 }
+
+/* Карьера на главной */
 
 .news-agro {
   padding: 58px 0 33px 0;
@@ -4435,6 +4488,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-top: 22px;
 }
 
+/* Свяжитесь с нами ан главной */
+
 .connect-agro__block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -4443,6 +4498,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 50px 100px 64px 60px;
   background: #435A33;
   border-radius: 20px 0 20px 0;
+  background-image: url(../img/connect_kontur_1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 30% center;
 }
 
 .connect-agro__block-column {
@@ -4476,6 +4535,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
   margin-right: 17px;
+  background-color: white;
+    height: auto;
+    border-radius: 0 25px 0 25px;
+}
+.selected_punct {
+    height: 50px;
+    color:#7EAF00;
+    padding: 0 21px;
+    line-height: 50px;
 }
 
 .connect-agro__block-formSelect-select-btn {
@@ -4549,6 +4617,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .connect-agro__block-formSelect-select .select__option {
   padding: 5px 23px;
 }
+
+/* Свяжитесь с нами ан главной end*/
 
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,

@@ -1,4 +1,7 @@
 <section id="jobs-agro" class="jobs-agro section">
+    <div class="jobs-agro_bg bg_left"></div>
+    <div class="jobs-agro_bg bg_right"></div>
+
     <div class="_container">
 
         <div class="jobs-agro__inner">
