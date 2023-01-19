@@ -35,7 +35,7 @@
 
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'resources/css/style.css',
+                'public/css/style.css',
         ])
     </head>
 
