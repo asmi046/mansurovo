@@ -1,0 +1,29 @@
+/* маленький баннер */
+
+.mini_banner {
+    position: relative;
+    max-height: 470px;
+    overflow: hidden;
+}
+
+.mini_banner .shadow img{
+    z-index: 1;
+    position: absolute;
+}
+
+.mini_banner .shadow{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: #0000005d;
+    z-index: 2;
+}
+
+.mini_banner ._container{
+    color: white;
+    z-index: 3;
+    position: absolute;
+
+}
+
+/* маленький баннер end*/

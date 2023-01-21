@@ -4,11 +4,7 @@
 		<div class="header__row d-flex">
 
 			<ul class="menu-list header__menu-list d-flex">
-				<li class="menu-list__item"><a href="#" class="menu-list__link">О компании</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Направления деятельности</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Продукция</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Вакансии</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
+				<x-menu-puncts></x-menu-puncts>
 			</ul>
 
 			<a href="index.html" class="logo-icon header__logo"></a>

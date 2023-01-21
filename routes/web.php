@@ -3,6 +3,12 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\WorkController;
+use App\Http\Controllers\CareerController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +22,9 @@ use App\Http\Controllers\IndexController;
 */
 
 Route::get('/', [IndexController::class, 'index'])->name('home');
+Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
+Route::get('/news', [ContactsController::class, 'index'])->name('news');
+Route::get('/work', [WorkController::class, 'index'])->name('work');
+Route::get('/career', [CareerController::class, 'index'])->name('career');
+Route::get('/products', [ProductsController::class, 'index'])->name('products');
+Route::get('/about', [AboutController::class, 'index'])->name('about');

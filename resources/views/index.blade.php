@@ -10,8 +10,6 @@
 
 @section('content')
 
-    <x-header></x-header>
-
         <main class="page">
             <x-main-baner></x-main-baner>
             <x-manufactures-slider></x-manufactures-slider>
@@ -22,5 +20,4 @@
             <x-connect-main></x-connect-main>
         </main>
 
-    <x-footer></x-footer>
 @endsection

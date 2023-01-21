@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>@yield('title') - Mini India</title>
+        <title>@yield('title') - Агрохолдинг Мансурово</title>
         <meta name="description" content="@yield('description')">
 
         <meta property="og:locale" content="ru_RU" />
@@ -36,12 +36,17 @@
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'public/css/style.css',
+                'public/css/components.css',
         ])
     </head>
 
     <body class="site_body" id="global_app">
         <div class="wrapper">
+            <x-header></x-header>
+
             @yield('content')
+
+            <x-footer></x-footer>
         </div>
 
         @vite([
