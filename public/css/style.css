@@ -53,6 +53,10 @@ section {
   display: block;
 }
 
+section {
+    overflow: hidden;
+}
+
 html {
   font-size: 16px;
 }
