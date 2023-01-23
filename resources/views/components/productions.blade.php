@@ -28,6 +28,13 @@
 
             <div class="our-production__column">
                 <a href="" class="our-production__card">
+                    <div class="our-production__card-img our-production__card-img_04"></div>
+                    <p class="our-production__card-text">Молоко</p>
+                </a>
+            </div>
+
+            <div class="our-production__column">
+                <a href="" class="our-production__card">
                     <div class="our-production__card-img">
                         <span class="our-production__card-icon-link"></span>
                         <p class="our-production__card-text-link">Перейти в каталог</p>

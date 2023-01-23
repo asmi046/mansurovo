@@ -18,7 +18,7 @@
 
             <div class="jobs-agro__column">
                 <div class="jobs-agro__img">
-                    <img src="img/jobs-agro-img.jpg" alt="">
+                    <img src="{{asset('img/jobs-agro-img.webp')}}" alt="">
                 </div>
             </div>
 

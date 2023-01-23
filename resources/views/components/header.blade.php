@@ -7,7 +7,7 @@
 				<x-menu-puncts></x-menu-puncts>
 			</ul>
 
-			<a href="index.html" class="logo-icon header__logo"></a>
+			<a href="{{route('home')}}" class="logo-icon header__logo"></a>
 
 			<div class="header__navigation">
 
