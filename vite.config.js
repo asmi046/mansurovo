@@ -10,6 +10,7 @@ export default defineConfig({
                 'public/css/style.css',
                 'public/css/components.css',
                 'resources/js/sliders.js',
+                'resources/js/map.js',
             ],
             refresh: true,
         }),

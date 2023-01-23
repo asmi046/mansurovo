@@ -30,11 +30,13 @@
         <meta name="_token" content="{{ csrf_token() }}">
 
         <script src="{{asset('js/lib/swiper/swiper-bundle.min.js')}}"></script>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
         @vite([
 
                 'resources/css/app.css',
                 'resources/js/app.js',
+
                 'public/css/style.css',
                 'public/css/components.css',
         ])
@@ -51,6 +53,7 @@
 
         @vite([
             'resources/js/sliders.js',
+            'resources/js/map.js',
         ])
     </body>
 </html>
