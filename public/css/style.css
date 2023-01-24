@@ -4686,6 +4686,46 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     overflow: hidden;
 }
 
+/* Страница направления деятельности */
+
+.works_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.works_wrapper .work_block {
+    margin-bottom: 20px;
+    border-radius: 20px 0 20px 0;
+    border: 2px solid #7EAF00;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.works_wrapper .work_block .work_text{
+    flex:1;
+    padding: 30px 50px;
+}
+
+.works_wrapper .work_block .work_text p{
+    margin-bottom: 20px;
+}
+
+.works_wrapper .work_block .work_text h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.works_wrapper .work_block .work_img{
+    width:35%;
+}
+
+
+
+/* Страница направления деятельности end */
+
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
