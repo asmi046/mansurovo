@@ -131,7 +131,7 @@ h6 {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  boder: 0;
+  border: 0;
 }
 
 table td {
@@ -3451,7 +3451,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: block;
   font-size: 14px;
   font-weight: 400;
-  padding: 5px 33.5px 5px 0;
+  padding: 5px 22px 5px 0;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -4410,6 +4410,25 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 58px 0 33px 0;
 }
 
+.news_years {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.news_years a{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.news_years a:hover{
+    color:#7eaf00
+}
+
 .news-agro__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4812,6 +4831,77 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /* Карьера end */
+
+/* страница продукция */
+
+.products_in_page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products_in_page .product{
+    width:49%;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+
+.products_in_page .product:nth-child(1){
+    border-radius: 12px 0 0 0 ;
+}
+
+.products_in_page .product:nth-child(2){
+    border-radius: 0 12px 0 0 ;
+}
+
+.products_in_page .product:nth-child(3){
+    border-radius: 0 0 0 12px;
+}
+
+.products_in_page .product:nth-child(4){
+    border-radius: 0 0  12px 0;
+}
+.products_in_page .product img{
+    position: absolute;
+    z-index: 11;
+}
+
+.products_in_page .product .shadow{
+    position: absolute;
+    z-index: 22;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right, #000000D1, #00000000); ;
+}
+
+.products_in_page .product .text{
+    z-index: 333;
+    position: absolute;
+    color: white;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.products_in_page .product h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.products_in_page .product p{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.products_in_page .product .btn_wrap{
+    margin-top: auto;
+}
+
+/* страница продукция end */
 
 
 @media (min-width: 991.98px) {
