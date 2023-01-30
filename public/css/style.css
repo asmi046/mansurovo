@@ -4725,6 +4725,94 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /* Страница направления деятельности end */
 
+/* Карьера */
+
+.carieer_blk {
+    display: flex;
+    flex-direction: column;
+}
+
+.carieer_blk .career_heder{
+    height: 130px;
+    background-color: #7EAF00;
+    color: white;
+    border-radius: 12px 0 12px 0;
+    display: flex;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.carieer_blk .career_heder .text{
+    flex: 1;
+}
+
+.carieer_blk .career_heder .text h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.carieer_blk .career_heder .text .more{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carieer_blk .career_heder .text .more span{
+    margin-right:  40px;
+}
+
+.carieer_blk .career_heder .control{
+    width:50px;
+    display: flex;
+}
+
+.carieer_blk .career_heder .control .flip_control{
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    background-image: url(../img/arrow_list.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carieer_blk .career_body{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.carieer_blk .career_body .cbb:last-child{
+    margin-right: 0;
+}
+
+.carieer_blk .career_body .cbb{
+    margin-right: 50px;
+
+}
+
+.carieer_blk .career_body .cbb ul li{
+    margin:  0 0 10px 0;
+    position:relative;
+    padding-left: 20px;
+}
+
+.carieer_blk .career_body .cbb ul li::before{
+    content:"";
+    width:10px;
+    height:10px;
+    border-radius: 7px;
+    background-color: #7EAF00;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Карьера end */
+
 
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
