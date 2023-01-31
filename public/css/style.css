@@ -4971,7 +4971,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .our-production__card-img {
-    height: 300px;
+    height: 239px;
+    min-width: 239px;
+  }
+
+  .our-production__card-icon-link {
+    height: 40px;
+    flex: 0 0 40px;
+    margin-bottom: 20px;
+  }
+
+  .our-production__card-icon-link-arrow {
+    margin-top: 20px;
   }
 }
 
@@ -5103,7 +5114,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .slider-bg-pagination-fraction {
     position: absolute;
-    top: 15%;
+    top: 30%;
+    height: 150px;
   }
 
   .directions-agro__column-right {
@@ -5115,6 +5127,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .directions-agro__slDescp-slide-title {
     font-size: 38px;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .our-production__inner {
+    flex-wrap: wrap;
+  }
+
+  .our-production__column {
+    margin-bottom: 30px;
   }
 }
 
