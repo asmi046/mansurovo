@@ -5156,12 +5156,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .directions-agro__wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        justify-content: space-between;
   }
 
   .directions-agro__column-left {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+        -ms-flex: 0 1 46%;
+            flex: 0 1 46%;
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -5173,7 +5174,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .directions-agro__column-right {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+            flex: 0 1 50%;
     margin-right: -350px;
   }
 
@@ -5198,10 +5199,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .slider-bg__slide {
     padding: 65px 0 75px 0;
-  }
-
-  .our-production__card-img {
-    height: 200px;
   }
 
   .our-production__card-icon-link {
@@ -5252,9 +5249,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-bottom: 15px;
   }
 
-  .our-production__card-img {
-    height: 180px;
-  }
 }
 
 @media (max-width: 812px) {
@@ -5379,21 +5373,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .footer__row {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .footer__menu-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+            margin-right: 0;
   }
 
   .footer__menu a {
     padding: 5px 0;
     display: block;
     line-height: 1;
+    text-align: center;
   }
 
   .footer__logo {
@@ -5429,6 +5425,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .slider-bg__slide {
     padding: 85px 0 35px 0;
+    height: 500px!important;
   }
 
   .slider-bg__card-title {
@@ -5499,7 +5496,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .jobs-agro__column-descp {
-    padding: 25px 20px 25px 0;
+    padding: 35px 30px 35px 0;
   }
 
   .jobs-agro__card-title {
@@ -5586,9 +5583,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-right: 10px;
   }
 
-  .our-production__card-img {
-    height: 165px;
-  }
 
   .our-production__card-text-link {
     font-size: 14px;
@@ -5634,13 +5628,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-top: 15px;
   }
 
-  .directions-agro__buttonBlock {
-    display: none;
-  }
 
   .directions-agro__column-right {
     height: auto;
     margin-right: 0;
+    display: flex;
   }
 
   .directions-agro__slImg {
@@ -5648,6 +5640,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width: 100%;
     height: 392px;
     height: auto;
+    margin: auto;
   }
 
   .directions-agro ._container {

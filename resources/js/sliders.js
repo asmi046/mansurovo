@@ -86,8 +86,8 @@ let directSlImg = new Swiper('.directSlImg', {
 			spaceBetween: 10,
 			autoHeight: true,
 		},
-		769: {
-			slidesPerView: 1.5,
+		768: {
+			slidesPerView: 1,
 			spaceBetween: 20,
 		},
 		811: {
