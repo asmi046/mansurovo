@@ -9,8 +9,12 @@ export default defineConfig({
                 'resources/js/app.js',
                 'public/css/style.css',
                 'public/css/components.css',
+                'public/css/menu.css',
+
                 'resources/js/sliders.js',
                 'resources/js/map.js',
+                'public/js/menu.js',
+                'public/js/search.js',
             ],
             refresh: true,
         }),

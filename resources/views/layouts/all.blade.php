@@ -39,6 +39,7 @@
 
                 'public/css/style.css',
                 'public/css/components.css',
+                'public/css/menu.css',
         ])
     </head>
 
@@ -54,6 +55,8 @@
         @vite([
             'resources/js/sliders.js',
             'resources/js/map.js',
+            'public/js/menu.js',
+            'public/js/search.js',
         ])
     </body>
 </html>
