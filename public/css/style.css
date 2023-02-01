@@ -4691,6 +4691,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 /* Блок контактов на главной end */
 
 /* Хлебные крошки */
+
+.uni_breadcrumbs ._container{
+    padding: 0;
+}
+
 .breadcrumbs {
     margin: 20px 0;
 }
@@ -4715,7 +4720,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .works_wrapper .work_block {
     margin-bottom: 20px;
     border-radius: 20px 0 20px 0;
-    border: 2px solid #7EAF00;
+    border: 1px solid #7EAF00;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -4740,7 +4745,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width:35%;
 }
 
+@media (max-width: 480px) {
+    .works_wrapper .work_block {
+        flex-direction: column-reverse;
+    }
 
+    .works_wrapper .work_block .work_text {
+        padding: 20px 30px;
+    }
+
+    .works_wrapper .work_block .work_img {
+        width: 100%;
+    }
+}
 
 /* Страница направления деятельности end */
 
@@ -6073,3 +6090,5 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 ._webp .our-production__card-img_03{ background-image: url(../img/our-production/03.webp); }
 
 ._webp .news-agro__card-img{ background-image: url(../img/nophoto.webp); }
+
+

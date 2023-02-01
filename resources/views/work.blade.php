@@ -26,7 +26,7 @@
                     </div>
 
                     <div class="work_img">
-                        <img src="{{asset('img/directions/01.jpg')}}" alt="">
+                        <img src="{{asset('img/directions/rast.webp')}}" alt="">
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="work_img">
-                        <img src="{{asset('img/works/works_cow.jpg')}}" alt="">
+                        <img src="{{asset('img/directions/giv.webp')}}" alt="">
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="work_img">
-                        <img src="{{asset('img/works/work_hors.jpg')}}" alt="">
+                        <img src="{{asset('img/directions/hosez.webp')}}" alt="">
                     </div>
                 </div>
 
