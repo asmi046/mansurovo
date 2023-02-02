@@ -25,12 +25,13 @@
         <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon16.png')}}" sizes="16x16">
         <link rel="icon" type="image/svg" href="{{asset('/img/logo.svg')}}" sizes="any">
 
-        <link rel="stylesheet" href="{{asset('js/lib/swiper/swiper-bundle.min.css')}}"/>
+
 
         <meta name="_token" content="{{ csrf_token() }}">
 
-        <script src="{{asset('js/lib/swiper/swiper-bundle.min.js')}}"></script>
-        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        @if (Route::currentRouteName() == "contacts")
+            <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        @endif
 
         @vite([
 
@@ -51,6 +52,9 @@
 
             <x-footer></x-footer>
         </div>
+
+        <link rel="stylesheet" href="{{asset('js/lib/swiper/swiper-bundle.min.css')}}"/>
+        <script src="{{asset('js/lib/swiper/swiper-bundle.min.js')}}"></script>
 
         @vite([
             'resources/js/sliders.js',

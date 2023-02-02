@@ -2479,10 +2479,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   content: "\e903";
 }
 
-.group {
-  *zoom: 1;
-}
-
 .group:before,
 .group:after {
   display: table;
@@ -3784,7 +3780,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .about-agro{
-  background-image: url("../img/about-agro-bg.png"); }
+  background-image: url("../img/about-agro-bg.webp"); }
 
 .about-agro {
   padding: 90px 0 76px 0;
