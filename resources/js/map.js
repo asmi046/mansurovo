@@ -1,4 +1,5 @@
-ymaps.ready(init);
+if (typeof  ymaps !== 'undefined')
+    ymaps.ready(init);
 
 function init () {
     var myMap = new ymaps.Map("render_map", {
