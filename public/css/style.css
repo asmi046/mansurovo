@@ -5077,6 +5077,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .search_wrapper {
+        padding: 5px 20px;
+        border-radius: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search_wrapper form {
+        border-radius: 9px;
+    }
+
+    .search_wrapper form button {
+        margin: 0 10px;
+    }
+
+    .search_wrapper form input {
+        padding-left: 10px;
+    }
+}
+
 /* панель поиска end */
 
 
