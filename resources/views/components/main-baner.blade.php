@@ -5,7 +5,9 @@
                     <div class="swiper slider-bg">
 
                         <div class="swiper-wrapper">
-                            <div class="slider-bg__slide slider__slide slider-main__slide-1 swiper-slide">
+                            <div class="slider-bg__slide slider__slide swiper-slide"
+                                style="background-image: url({{asset('img/main/bn1.webp')}})"
+                            >
                                 <div class="slider-bg__nuar_blk nuar_blk"></div>
                                 <div class="slider-bg__container _container">
 
@@ -67,7 +69,9 @@
                                 </div>
                             </div>
 
-                            <div class="slider-bg__slide slider__slide slider-main__slide-1 swiper-slide">
+                            <div class="slider-bg__slide slider__slide swiper-slide"
+                                style="background-image: url({{asset('img/main/bn2.webp')}})"
+                            >
                                 <div class="slider-bg__nuar_blk nuar_blk"></div>
                                 <div class="slider-bg__container _container">
 
@@ -129,7 +133,9 @@
                                 </div>
                             </div>
 
-                            <div class="slider-bg__slide slider__slide slider-main__slide-1 swiper-slide">
+                            <div class="slider-bg__slide slider__slide swiper-slide"
+                                style="background-image: url({{asset('img/main/bn3.webp')}})"
+                            >
                                 <div class="slider-bg__nuar_blk nuar_blk"></div>
                                 <div class="slider-bg__container _container">
 

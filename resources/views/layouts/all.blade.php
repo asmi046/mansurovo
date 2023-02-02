@@ -57,6 +57,7 @@
             'resources/js/map.js',
             'public/js/menu.js',
             'public/js/search.js',
+            'public/js/career.js',
         ])
     </body>
 </html>

@@ -4769,7 +4769,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .carieer_blk .career_heder{
-    height: 130px;
+    height: auto;
     background-color: #7EAF00;
     color: white;
     border-radius: 12px 0 12px 0;
@@ -4810,19 +4810,36 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     background-color: white;
     display: block;
     margin: auto;
-    background-image: url(../img/arrow_list.svg);
+    background-image: url(../img/icons/arrow-mini-green.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.carieer_blk.active .career_heder .control .flip_control{
+    transform: rotate(90deg);
+}
+
 
 .carieer_blk .career_body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    padding: 0 20px;
+    display: none;
+}
+
+.carieer_blk .career_body.active{
+    display: flex;
 }
 
 .carieer_blk .career_body .cbb:last-child{
     margin-right: 0;
+}
+
+.carieer_blk .career_body h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 22px;
 }
 
 .carieer_blk .career_body .cbb{
@@ -4845,6 +4862,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     position: absolute;
     left: 0;
     top: 5px;
+}
+
+@media (max-width: 768px) {
+    .carieer_blk .career_body.active {
+        flex-direction: column;
+    }
 }
 
 /* Карьера end */
@@ -4916,6 +4939,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .products_in_page .product .btn_wrap{
     margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .products_in_page {
+        flex-direction: column;
+    }
+
+    .products_in_page .product {
+        width:100%;
+        border-radius: 20px 0 20px 0!important;
+    }
 }
 
 /* страница продукция end */
@@ -5917,6 +5951,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .directions-agro__slDescp-slide {
     padding-right: 10px;
   }
+
+  .connect-agro__block {
+    background-size: cover;
+    background-position: -65% center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -5988,6 +6027,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
     .about-agro__column {
         padding-bottom: 15px;
+    }
+
+    .icon-menu {
+        height: 20px;
+    }
+    .icon-menu span {
+        top:9px;
+    }
+
+    .icon-menu.active span:first-child {
+        top: 7px;
+    }
+
+    .news_years a {
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 }
 
