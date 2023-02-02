@@ -57,19 +57,19 @@
                     <div class="swiper-wrapper">
                         <div class="directions-agro__slImg-slide slider__slide swiper-slide">
                             <picture>
-                                <img src="{{asset('img/directions/rast.webp')}}" alt="">
+                                <img loading="lazy" src="{{asset('img/directions/rast.webp')}}" alt="">
                             </picture>
                         </div>
 
                         <div class="directions-agro__slImg-slide slider__slide swiper-slide">
                             <picture>
-                                <img src="{{asset('img/directions/giv.webp')}}" alt="">
+                                <img loading="lazy" src="{{asset('img/directions/giv.webp')}}" alt="">
                             </picture>
                         </div>
 
                         <div class="directions-agro__slImg-slide slider__slide swiper-slide">
                             <picture>
-                                <img src="{{asset('img/directions/hosez.webp')}}" alt="">
+                                <img loading="lazy" src="{{asset('img/directions/hosez.webp')}}" alt="">
                             </picture>
                         </div>
                     </div>

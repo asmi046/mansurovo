@@ -18,7 +18,7 @@
 
             <div class="jobs-agro__column">
                 <div class="jobs-agro__img">
-                    <img src="{{asset('img/jobs-agro-img.webp')}}" alt="">
+                    <img loading="lazy" src="{{asset('img/jobs-agro-img.webp')}}" alt="">
                 </div>
             </div>
 
