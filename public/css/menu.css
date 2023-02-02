@@ -77,3 +77,15 @@
         margin: 10px 0;
     }
 }
+
+
+@media (max-width: 375px) {
+    .menu_body .puncts li a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .menu_body .puncts li a::before {
+        width: 7px;
+        height: 7px;
+    }
+}
