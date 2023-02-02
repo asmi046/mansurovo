@@ -12,7 +12,7 @@
         <meta property="og:title" content="@yield('title') />
         <meta property="og:description" content="@yield('description')" />
         <meta property="og:url" content="{{route('home')}}" />
-        <meta property="og:site_name" content="Магазин индийских товаров - Mini India" />
+        <meta property="og:site_name" content="Агрохолдинг Мансурово" />
         <meta property="og:image" content="{{asset('img/og_img.jpg')}}" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
