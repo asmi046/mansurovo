@@ -7,7 +7,7 @@
         "composer_remove": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && php composer.phar dumpauto\"",
         "composer_install": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && php composer.phar install\"",
         "composer_update": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && php composer.phar update\"",
-        "pull_rep": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && git pull --hard origin/master\"",
+        "pull_rep": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && git pull\"",
         "clean_rep": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && git clean -f\"",
         "reset_rep": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && git reset --hard\"",
         "send_vite_build": "scp -C -r public/build ssh man3640425@ssh.man3640425.nichost.ru:mansurovogroup.ru/docs/public",
