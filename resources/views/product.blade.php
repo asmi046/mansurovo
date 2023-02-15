@@ -17,54 +17,19 @@
 
             <x-breadcrumbs :title="$title"></x-breadcrumbs>
             <div class="products_in_page">
-                <div class="product">
-                    <img src="{{asset('img/our-production/cow.webp')}}" alt="">
-                    <div class="shadow"></div>
-                    <div class="text">
-                        <h2>Молоко</h2>
-                        <p>Предлагаем лошадей и жеребят от Александровского конезавода</p>
-                        <div class="btn_wrap">
-                            <a href="#" class="btn">Подробнее</a>
+                @foreach ($categories as $cat)
+                    <div class="product">
+                        <img src="{{$cat->img}}" alt="">
+                        <div class="shadow"></div>
+                        <div class="text">
+                            <h2>{{$cat->title}}</h2>
+                            <p>{{$cat->quote}}</p>
+                            <div class="btn_wrap">
+                                <a href="{{route('products_cat', $cat->slug)}}" class="btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="product">
-                    <img src="{{asset('img/our-production/hors.webp')}}" alt="">
-                    <div class="shadow"></div>
-                    <div class="text">
-                        <h2>Лошади</h2>
-                        <p>Предлагаем лошадей и жеребят от Александровского конезавода</p>
-                        <div class="btn_wrap">
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="{{asset('img/our-production/zerno.webp')}}" alt="">
-                    <div class="shadow"></div>
-                    <div class="text">
-                        <h2>Зерно</h2>
-                        <p>Зерновой материал для дальнейшей переработки</p>
-                        <div class="btn_wrap">
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="{{asset('img/our-production/hony.webp')}}" alt="">
-                    <div class="shadow"></div>
-                    <div class="text">
-                        <h2>Мед</h2>
-                        <p>Предлагаем мед и продукты пчеловодства с собственных пасек</p>
-                        <div class="btn_wrap">
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </section>

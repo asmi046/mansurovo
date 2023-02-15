@@ -28,6 +28,7 @@ class ProductSeeder extends Seeder
             [
                 'title' => "АЛЕКСЕИЧ",
                 'slug' => Str::slug("АЛЕКСЕИЧ"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "alekseich_01.jpg",
                 'img2' => "alekseich_02.jpg",
@@ -39,6 +40,7 @@ class ProductSeeder extends Seeder
             [
                 'title' => "БЕЗОСТАЯ 100",
                 'slug' => Str::slug("БЕЗОСТАЯ 100"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "bezostaya_01.jpg",
                 'img2' => "bezostaya_02.jpg",
@@ -50,6 +52,7 @@ class ProductSeeder extends Seeder
             [
                 'title' => "БУМБА",
                 'slug' => Str::slug("БУМБА"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "bumba_01.jpg",
                 'img2' => "bumba_02.jpg",
@@ -61,6 +64,7 @@ class ProductSeeder extends Seeder
                 [
                 'title' => "ГОМЕР",
                 'slug' => Str::slug("ГОМЕР"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "gomer_01.jpg",
                 'img2' => "gomer_02.jpg",
@@ -71,6 +75,7 @@ class ProductSeeder extends Seeder
                 [
                 'title' => "ГЕРДА",
                 'slug' => Str::slug("ГЕРДА"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "gerda_01.jpg",
                 'img2' => "gerda_02.jpg",
@@ -81,6 +86,7 @@ class ProductSeeder extends Seeder
                 [
                 'title' => "ГРАФ",
                 'slug' => Str::slug("ГРАФ"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "graf_01.jpg",
                 'img2' => "graf_02.jpg",
@@ -91,6 +97,7 @@ class ProductSeeder extends Seeder
                 [
                 'title' => "ГРОМ",
                 'slug' => Str::slug("ГРОМ"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "gnom_01.jpg",
                 'img2' => "gnom_02.jpg",
@@ -101,6 +108,7 @@ class ProductSeeder extends Seeder
                 [
                 'title' => "ГУРТ",
                 'slug' => Str::slug("ГУРТ"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "gurt_01.jpg",
                 'img2' => "gurt_02.jpg",
@@ -111,6 +119,7 @@ class ProductSeeder extends Seeder
                 [
                 'title' => "ИЛИАДА",
                 'slug' => Str::slug("ИЛИАДА"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "iliada_01.jpg",
                 'img2' => "iliada_02.jpg",
@@ -122,6 +131,7 @@ class ProductSeeder extends Seeder
                 [
                 'title' => "КЛАССИКА",
                 'slug' => Str::slug("КЛАССИКА"),
+                'quote' => '',
                 'category' => "Зерно",
                 'img1' => "classic_01.jpg",
                 'img2' => "classic_02.jpg",

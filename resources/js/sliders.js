@@ -100,3 +100,11 @@ let directSlImg = new Swiper('.directSlImg', {
 
 directSlDescp.controller.control = directSlImg;
 directSlImg.controller.control = directSlDescp;
+
+
+var swiper = new Swiper(".product_page_galery", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

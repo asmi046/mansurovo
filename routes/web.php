@@ -27,4 +27,6 @@ Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/work', [WorkController::class, 'index'])->name('work');
 Route::get('/career', [CareerController::class, 'index'])->name('career');
 Route::get('/products', [ProductsController::class, 'index'])->name('products');
+Route::get('/products/{slug}', [ProductsController::class, 'show_cat'])->name('products_cat');
+Route::get('/products/{slug}/{slug_p}', [ProductsController::class, 'show_page'])->name('products_page');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
