@@ -13,16 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('vacancies', function (Blueprint $table) {
+        Schema::create('options', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->string('place');
-            $table->string('grafic');
-            $table->integer('price')->nullable();
-            $table->text('ob')->nullable();
-            $table->text('treb'->nullable());
-            $table->text('usl')->nullable();
+            $table->string('type')->default('plan');
+            $table->string('title');
+            $table->text('value');
         });
     }
 
@@ -33,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vacancies');
+        Schema::dropIfExists('options');
     }
 };

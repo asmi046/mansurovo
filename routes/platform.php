@@ -18,6 +18,21 @@ use App\Orchid\Screens\User\UserProfileScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
 
+use App\Orchid\Screens\Category\CategoryCreateScreen;
+use App\Orchid\Screens\Category\CategoryEditScreen;
+use App\Orchid\Screens\Category\CategoryListScreen;
+
+use App\Orchid\Screens\Vacancy\VacancyCreateScreen;
+use App\Orchid\Screens\Vacancy\VacancyEditScreen;
+use App\Orchid\Screens\Vacancy\VacancyListScreen;
+
+use App\Orchid\Screens\Product\ProductCreateScreen;
+use App\Orchid\Screens\Product\ProductEditScreen;
+use App\Orchid\Screens\Product\ProductListScreen;
+
+use App\Orchid\Screens\Options\OptionsList;
+use App\Orchid\Screens\Options\EditOptions;
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard Routes
@@ -28,6 +43,72 @@ use Tabuna\Breadcrumbs\Trail;
 | contains the need "dashboard" middleware group. Now create something great!
 |
 */
+
+// Опции
+Route::screen('/options', OptionsList::class)
+    ->name('platform.options')
+    ->breadcrumbs(fn (Trail $trail) => $trail
+        ->parent('platform.index')
+        ->push(__('Опции'), route("platform.options")));
+
+Route::screen('/options/{id}/edit', EditOptions::class)
+    ->name('platform.options_edit')->breadcrumbs(fn (Trail $trail, $id) => $trail
+    ->parent('platform.options')
+    ->push(__('Редактирование опции'), route('platform.options_edit', $id)));
+
+// Категории
+Route::screen('/categories', CategoryListScreen::class)
+    ->name('platform.category')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.index')
+    ->push(__('Категории товаров'), route('platform.category')));
+
+Route::screen('/categories/{id}/edit', CategoryEditScreen::class)
+    ->name('platform.category_edit')->breadcrumbs(fn (Trail $trail, $id) => $trail
+    ->parent('platform.category')
+    ->push(__('Редактирование категории'), route('platform.category_edit', $id)));
+
+Route::screen('/categories/create', CategoryCreateScreen::class)
+    ->name('platform.category_create')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.category')
+    ->push(__('Добавление категории'), route('platform.category_create')));
+
+
+// Товары
+Route::screen('/products', ProductListScreen::class)
+    ->name('platform.product')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.index')
+    ->push(__('Товары'), route('platform.product')));
+
+Route::screen('/products/{id}/edit', ProductEditScreen::class)
+    ->name('platform.product_edit')->breadcrumbs(fn (Trail $trail, $id) => $trail
+    ->parent('platform.product')
+    ->push(__('Редактирование товара'), route('platform.product_edit', $id)));
+
+Route::screen('/products/create', ProductCreateScreen::class)
+    ->name('platform.product_create')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.product')
+    ->push(__('Добавление товара'), route('platform.product_create')));
+
+// Вакансии
+Route::screen('/vacancy', VacancyListScreen::class)
+    ->name('platform.vacancy')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.index')
+    ->push(__('Вакансии'), route('platform.vacancy')));
+
+Route::screen('/vacancy/{id}/edit', VacancyEditScreen::class)
+    ->name('platform.vacancy_edit')->breadcrumbs(fn (Trail $trail, $id) => $trail
+    ->parent('platform.vacancy')
+    ->push(__('Редактирование вакансии'), route('platform.vacancy_edit', $id)));
+
+Route::screen('/vacancy/create', VacancyCreateScreen::class)
+    ->name('platform.vacancy_create')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.vacancy')
+    ->push(__('Добавление вакансии'), route('platform.vacancy_create')));
+
+
+
+
+
 
 // Main
 Route::screen('/main', PlatformScreen::class)

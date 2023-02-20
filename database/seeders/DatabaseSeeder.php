@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             CategorySeeder::class,
             VacancySeeder::class,
+            OptionSeeder::class,
         ]);
     }
 }
