@@ -27,16 +27,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (DB::connection()->getDatabaseName())  {
-            $all_options = Option::all();
 
-            $opt = [];
-
-            foreach ($all_options as $otion) {
-                $opt[$otion['name']] = $otion['value'];
-            }
-            View::share('options', $opt);
-
-        }
     }
 }

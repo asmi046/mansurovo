@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('grafic');
             $table->integer('price')->nullable();
             $table->text('ob')->nullable();
-            $table->text('treb'->nullable());
+            $table->text('treb')->nullable();
             $table->text('usl')->nullable();
         });
     }
