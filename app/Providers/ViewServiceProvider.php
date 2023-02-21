@@ -27,7 +27,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('dashboard', function ($view) {
+        View::composer('*', function ($view) {
             // if (DB::connection()->getDatabaseName())  {
                 $all_options = Option::all();
 
