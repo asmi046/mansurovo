@@ -45,11 +45,15 @@
 
 @media (max-width: 480px) {
     .mini_banner {
-        height: 300px;
+        height: 230px;
         margin-top: 45px;
     }
     .mini_banner ._container p {
         margin: 30px auto 40px 0;
+    }
+
+    .mini_banner ._container h1 {
+        font-size: 38px;
     }
 }
 

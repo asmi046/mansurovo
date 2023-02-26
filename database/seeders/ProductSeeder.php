@@ -30,10 +30,10 @@ class ProductSeeder extends Seeder
                 'slug' => Str::slug("АЛЕКСЕИЧ"),
                 'quote' => '',
                 'category' => "Зерно",
-                'img1' => "alekseich_01.jpg",
-                'img2' => "alekseich_02.jpg",
+                'img1' => "alekseich_04.jpg",
+                'img2' => "alekseich_01.jpg",
                 'img3' => "alekseich_03.jpg",
-                'img4' => "alekseich_04.jpg",
+                'img4' => "alekseich_02.jpg",
                 'description' => file_get_contents(public_path('facer/text/alekseich.html'))
             ],
 
