@@ -22,36 +22,36 @@
                     <div class="work_text">
                         <h2>Растеневодство</h2>
                         <p>Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом  на территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень, подсолнечник, кукурузу, сою.</p>
-                        <a href="" class="btn">Подробнее</a>
+                        <a href="{{route('rastenevodstvo')}}" class="btn">Подробнее</a>
                     </div>
 
-                    <div class="work_img">
+                    <a href="{{route('rastenevodstvo')}}" class="work_img">
                         <img src="{{asset('img/directions/rast.webp')}}" alt="">
-                    </div>
+                    </a>
                 </div>
 
                 <div class="work_block">
                     <div class="work_text">
                         <h2>Животноводство</h2>
                         <p>Полный цикл производства от выращивания кормовой базы до поставок готовой продукции. Наша компания располагает стадом  3 788  голов крупного рогатого скота фуражных и мясных пород</p>
-                        <a href="" class="btn">Подробнее</a>
+                        <a href="{{route('givotnovodstvo')}}" class="btn">Подробнее</a>
                     </div>
 
-                    <div class="work_img">
+                    <a href="{{route('givotnovodstvo')}}" class="work_img">
                         <img src="{{asset('img/directions/giv.webp')}}" alt="">
-                    </div>
+                    </a>
                 </div>
 
                 <div class="work_block">
                     <div class="work_text">
                         <h2>Конезавод</h2>
                         <p>«Александровский конный завод №12», старейшее предприятие Курской области. Ведет свою историю с начала XIX века. Предприятие разводит лошадей пород русская рысистая и шетлендский пони.</p>
-                        <a href="" class="btn">Подробнее</a>
+                        <a href="{{route('konezavod')}}" class="btn">Подробнее</a>
                     </div>
 
-                    <div class="work_img">
+                    <a href="{{route('konezavod')}}" class="work_img">
                         <img src="{{asset('img/directions/hosez.webp')}}" alt="">
-                    </div>
+                    </a>
                 </div>
 
             </div>

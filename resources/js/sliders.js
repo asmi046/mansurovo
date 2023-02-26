@@ -108,3 +108,10 @@ var swiper = new Swiper(".product_page_galery", {
     clickable: true,
   },
 });
+
+var swiper = new Swiper(".work_n_galery", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

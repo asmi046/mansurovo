@@ -22,6 +22,10 @@
             @if (isset($productpage))
                 <span class="sep"> / <a href="{{route("products")}}">Продукция</a> / <a href="{{route('products_cat', $catslug)}}">{{$cattitle}}</a> / </span> <span class="finish">{{ $productpage }}</span>
             @endif
+
+            @if (isset($napravlenie))
+                <span class="sep"> / <a href="{{route("work")}}">Направления деятельности</a> / <span>{{$napravlenie}}</span>
+            @endif
          </div>
     </div>
 </section>
