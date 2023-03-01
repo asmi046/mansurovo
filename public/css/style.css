@@ -149,6 +149,7 @@ body {
   font-weight: 400;
   line-height: 19.2px;
   color: #161615;
+  height: auto;
 }
 
 body a {
@@ -193,7 +194,6 @@ h4 {
 
 .wrapper {
   width: 100%;
-  min-height: 100%;
   /* overflow: hidden; */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3394,6 +3394,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   position: sticky;
     top: 0;
     z-index: 99999;
+
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
 
 .header__row {
@@ -3757,6 +3759,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .recurring {
   padding-top: 27px;
+}
+
+.inpage_h1{
+    margin: 30px 0 10px 0;
 }
 
 .recurring h1,
@@ -4421,6 +4427,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-size: 32px;
 }
 
+.news_years a.active,
 .news_years a:hover{
     color:#7eaf00
 }
@@ -4484,7 +4491,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 26.5px 10px 50px 30px;
+  padding: 25px;
   height: 100%;
 }
 
@@ -4499,6 +4506,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 22px;
   font-weight: 900;
   line-height: 26.4px;
+  margin-bottom: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -4513,6 +4521,41 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .news-agro__button {
   margin-top: 22px;
 }
+
+.news_prev{
+    width: 100%;
+    max-height: 250px;
+    display: flex;
+    border: 2px solid #7eaf00;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+
+.news_prev .right .news_data{
+    color: #7eaf00;
+    margin-bottom: 20px;
+}
+
+.news_prev .right h1{
+    margin-bottom: 20px;
+}
+
+.news_prev .right {
+    padding: 20px;
+}
+
+
+@media (max-width: 520px) {
+
+    .news_prev{
+        flex-direction: column-reverse;
+        max-height: unset;
+    }
+
+}
+
 
 /* Свяжитесь с нами ан главной */
 
@@ -6032,6 +6075,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .directions-agro__slImg .swiper-wrapper {
     height: 100% !important;
+  }
+
+  .wrapper {
+    margin-top: 50px;
   }
 }
 

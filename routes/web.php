@@ -24,6 +24,7 @@ use App\Http\Controllers\AboutController;
 Route::get('/', [IndexController::class, 'index'])->name('home');
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/news', [NewsController::class, 'index'])->name('news');
+Route::get('/news/{slug}', [NewsController::class, 'newspage'])->name('newspage');
 Route::get('/work', [WorkController::class, 'index'])->name('work');
 Route::get('/work/rastenevodstvo', [WorkController::class, 'rastenevodstvo_show'])->name('rastenevodstvo');
 Route::get('/work/givotnovodstvo', [WorkController::class, 'givotnovodstvo_show'])->name('givotnovodstvo');

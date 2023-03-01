@@ -45,14 +45,11 @@
     </head>
 
     <body class="site_body" id="global_app">
+        <x-header></x-header>
         <div class="wrapper">
-            <x-header></x-header>
-
             @yield('content')
-
-            <x-footer></x-footer>
         </div>
-
+        <x-footer></x-footer>
 
         <script src="{{asset('js/lib/swiper/swiper-bundle.min.js')}}"></script>
 

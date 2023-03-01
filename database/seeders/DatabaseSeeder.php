@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             VacancySeeder::class,
             OptionSeeder::class,
+            NewsSeeder::class,
         ]);
     }
 }

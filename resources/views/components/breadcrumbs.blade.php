@@ -26,6 +26,10 @@
             @if (isset($napravlenie))
                 <span class="sep"> / <a href="{{route("work")}}">Направления деятельности</a> / <span>{{$napravlenie}}</span>
             @endif
+
+            @if (isset($news))
+                <span class="sep"> / <a href="{{route("news")}}">Новости</a> / <span>{{$news}}</span>
+            @endif
          </div>
     </div>
 </section>

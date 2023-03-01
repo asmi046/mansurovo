@@ -16,7 +16,7 @@
             <x-principes></x-principes>
             <x-productions></x-productions>
             <x-vacansy-main></x-vacansy-main>
-            <x-news-main></x-news-main>
+            <x-news-main :news="$news"></x-news-main>
             <x-connect-main></x-connect-main>
         </main>
 
