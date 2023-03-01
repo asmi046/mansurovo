@@ -27,7 +27,7 @@
         "cache_clear": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && php artisan cache:clear\"",
         "optimize": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && php artisan optimize\"",
         "optimize_all": "npm run optimize && npm run cache_clear && npm run cache_view && npm run cache_route && npm run cache_config",
-        "orchid_user": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && php artisan orchid:admin admin asmi046@gmail.com 123\""
+        "orchid_user": "ssh man3640425@ssh.man3640425.nichost.ru \"cd mansurovogroup.ru/docs && php artisan orchid:admin admin asmi046@gmail.com dfEEdd32D\""
     },
     "devDependencies": {
         "axios": "^1.1.2",
