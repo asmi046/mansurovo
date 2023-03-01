@@ -33,6 +33,10 @@ use App\Orchid\Screens\Product\ProductListScreen;
 use App\Orchid\Screens\Options\OptionsList;
 use App\Orchid\Screens\Options\EditOptions;
 
+use App\Orchid\Screens\News\NewsCreateScreen;
+use App\Orchid\Screens\News\NewsEditScreen;
+use App\Orchid\Screens\News\NewsListScreen;
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard Routes
@@ -105,6 +109,22 @@ Route::screen('/vacancy/create', VacancyCreateScreen::class)
     ->parent('platform.vacancy')
     ->push(__('Добавление вакансии'), route('platform.vacancy_create')));
 
+
+// Новости
+Route::screen('/news', NewsListScreen::class)
+    ->name('platform.news')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.index')
+    ->push(__('Новости'), route('platform.news')));
+
+Route::screen('/news/{id}/edit', VacancyEditScreen::class)
+    ->name('platform.news_edit')->breadcrumbs(fn (Trail $trail, $id) => $trail
+    ->parent('platform.news')
+    ->push(__('Редактирование новости'), route('platform.news_edit', $id)));
+
+Route::screen('/news/create', NewsCreateScreen::class)
+    ->name('platform.news_create')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.news')
+    ->push(__('Добавление новости'), route('platform.news_create')));
 
 
 

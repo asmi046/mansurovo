@@ -46,6 +46,10 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('user-follow')
                 ->route('platform.vacancy'),
 
+            Menu::make('Новости')
+                ->icon('book-open')
+                ->route('platform.news'),
+
             // Menu::make('Example screen')
             //     ->icon('monitor')
             //     ->route('platform.example')
