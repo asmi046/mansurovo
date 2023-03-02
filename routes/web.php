@@ -9,6 +9,7 @@ use App\Http\Controllers\WorkController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,7 @@ use App\Http\Controllers\AboutController;
 */
 
 Route::get('/', [IndexController::class, 'index'])->name('home');
+Route::get('/search', [SearchController::class, 'index'])->name('search');
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/news/{slug}', [NewsController::class, 'newspage'])->name('newspage');

@@ -1,8 +1,5 @@
 <div class="search_wrapper">
-    <form action="">
-        <input type="text" placeholder="Поиск">
-        <button type="submit"></button>
-    </form>
+    <x-search-form></x-search-form>
 
     <a href="" class="close"></a>
 </div>

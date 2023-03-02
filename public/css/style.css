@@ -2860,6 +2860,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 1;
 }
 
+.search_h2 {
+    font-size: 28px;
+    margin: 1em 0;
+}
+
 /*! nouislider - 14.6.0 - 6/27/2020 */
 
 /* Functional styling;
@@ -5203,8 +5208,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /* панель поиска */
 
+.search_wrapper.visible {
+    display: flex;
+    max-height: 80px;
+    height: 80px;
+    position: relative;
+    padding: 10px 0;
+
+}
+
+.search_wrapper.visible form{
+    margin-right: 0;
+}
+
 .search_wrapper.active {
     display: flex;
+
 }
 
 .search_wrapper {
