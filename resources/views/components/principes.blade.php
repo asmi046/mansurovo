@@ -1,4 +1,4 @@
-<section id="about-agro" class="about-agro section">
+<section id="about-agro" class="about-agro section sectionOh">
     <div class="_container">
 
         <h2 class="about-agro__title title">

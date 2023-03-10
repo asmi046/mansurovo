@@ -12,12 +12,7 @@
             </div>
 
             <div class="connect-agro__block-column connect-agro__block-column-form">
-                <div action="#" class="connect-agro__block-formSelect">
-                    <div class="connect-agro__block-formSelect-select">
-                        <div class="selected_punct"> Выберите нужный пункт </div>
-                    </div>
-                    <button type="submit" class="connect-agro__block-formSelect-select-btn"></button>
-                </div>
+                <select-message-type></select-message-type>
                 <div class="connect-agro__block-contacts">
                     <a href="tel:+74712540630" class="connect-agro__block-contacts-phone">+7 (4712) 54-06-30</a>
                     <a href="mailto:info@mansurovoagro.ru"

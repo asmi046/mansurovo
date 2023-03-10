@@ -1,5 +1,5 @@
 
-			<section id="news-agro" class="news-agro section">
+			<section id="news-agro" class="news-agro section sectionOh">
 				<div class="_container">
 
 					<h2 class="news-agro__title title">Новости нашей компании</h2>

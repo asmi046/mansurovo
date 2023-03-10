@@ -10,6 +10,7 @@ use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\SenderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,7 @@ Route::get('/products', [ProductsController::class, 'index'])->name('products');
 Route::get('/products/{slug}', [ProductsController::class, 'show_cat'])->name('products_cat');
 Route::get('/products/{slug}/{slug_p}', [ProductsController::class, 'show_page'])->name('products_page');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
+
+
+Route::get('/thencs', [SenderController::class, "show_thencs"])->name('thencs');
+Route::post('/send_consult', [SenderController::class, "send_consultation"])->name('send_consultation');

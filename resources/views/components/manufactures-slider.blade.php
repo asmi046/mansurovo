@@ -1,4 +1,4 @@
-<section id="directions-agro" class="directions-agro section">
+<section id="directions-agro" class="directions-agro section sectionOh">
     <div class="_container">
 
         <div class="directions-agro__wrap d-flex">
