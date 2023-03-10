@@ -13,7 +13,7 @@
                     где можно начать и продолжить свой карьерный рост. Мы всегда
                     рады новым талантливым и инициативным специалистам.
                 </p>
-                <a href="#" class="jobs-agro__card-button btn">Смотреть все вакансии</a>
+                <a href="{{route('career')}}" class="jobs-agro__card-button btn">Смотреть все вакансии</a>
             </div>
 
             <div class="jobs-agro__column">

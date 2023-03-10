@@ -11,7 +11,7 @@
 
 					</div>
 
-					<a href="#" class="news-agro__button btn">Смотреть все новости</a>
+					<a href="{{route('news')}}" class="news-agro__button btn">Смотреть все новости</a>
 
 				</div>
 			</section>

@@ -149,7 +149,6 @@ class ProductSeeder extends Seeder
             Storage::disk('public')->put($item["img3"], file_get_contents(public_path('facer/img/'.$item["img3"])), 'public');
 
             Storage::disk('public')->put($item["img4"], file_get_contents(public_path('facer/img/'.$item["img4"])), 'public');
-
         }
 
         for ($i = 0; $i<count($main_data); $i++) {

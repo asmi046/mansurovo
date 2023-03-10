@@ -18,19 +18,23 @@
 
             <div class="works_wrapper">
 
-                <div class="work_block">
-                    <div class="work_text">
-                        <h2>Растеневодство</h2>
-                        <p>Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом  на территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень, подсолнечник, кукурузу, сою.</p>
-                        <a href="{{route('rastenevodstvo')}}" class="btn">Подробнее</a>
+                @foreach ($works as $item)
+
+
+                    <div class="work_block">
+                        <div class="work_text">
+                            <h2>{{$item->title}}</h2>
+                            <p>{!!$item->quote!!}</p>
+                            <a href="{{route('home').'/'.$item->lnk}}" class="btn">Подробнее</a>
+                        </div>
+
+                        <a href="{{route('home').'/'.$item->lnk}}" class="work_img">
+                            <img src="{{$item->img}}" alt="">
+                        </a>
                     </div>
+                @endforeach
 
-                    <a href="{{route('rastenevodstvo')}}" class="work_img">
-                        <img src="{{asset('img/directions/rast.webp')}}" alt="">
-                    </a>
-                </div>
-
-                <div class="work_block">
+                {{-- <div class="work_block">
                     <div class="work_text">
                         <h2>Животноводство</h2>
                         <p>Полный цикл производства от выращивания кормовой базы до поставок готовой продукции. Наша компания располагает стадом  3 788  голов крупного рогатого скота фуражных и мясных пород</p>
@@ -52,7 +56,7 @@
                     <a href="{{route('konezavod')}}" class="work_img">
                         <img src="{{asset('img/directions/hosez.webp')}}" alt="">
                     </a>
-                </div>
+                </div> --}}
 
             </div>
 

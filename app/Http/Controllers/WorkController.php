@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
+use App\Models\Work;
 
 class WorkController extends Controller
 {
     public function index() {
-        return view('work');
+        $work = Work::all();
+        return view('work', ['works' => $work]);
     }
 
     // Страница растеневодства
