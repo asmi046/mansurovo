@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
             VacancySeeder::class,
             OptionSeeder::class,
             NewsSeeder::class,
+            WorkSeeder::class,
+            SlideSeeder::class,
         ]);
     }
 }

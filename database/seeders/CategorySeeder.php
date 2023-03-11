@@ -50,16 +50,16 @@ class CategorySeeder extends Seeder
 
 
             [
-                'name' => "Зерно",
-                'title' => "Зерно",
-                'slug' => Str::slug("Зерно"),
+                'name' => "Семена",
+                'title' => "Семена",
+                'slug' => Str::slug("Семена"),
                 'img' => "zerno.webp",
                 'banner' => "zerno_hb.webp",
-                'quote' => "Зерновой материал для дальнейшей переработки",
+                'quote' => "Семеной материал высокого качества",
                 'description' => "",
 
-                "seo_title" => 'Зерно',
-                "seo_description" => 'Зерновой материал для дальнейшей переработки',
+                "seo_title" => 'Семена',
+                "seo_description" => 'Семеной материал высокого качества',
             ],
 
             [

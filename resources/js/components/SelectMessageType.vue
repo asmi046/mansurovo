@@ -3,7 +3,7 @@
     <div  class="connect-agro__block-formSelect">
         <div  class="connect_wrapper">
             <div @click.prevent="toggleList()" class="connect-agro__block-formSelect-select" :class="{'active':showList}">
-                <div class="selected_punct"> {{(selectedPunct == "")?"Выберите нужный пункт":selectedPunct}} </div>
+                <div class="selected_punct"> {{(selectedPunct == null)?"Выберите нужный пункт":selectedPunct}} </div>
             </div>
 
             <div v-show="showList" class="list">
@@ -22,7 +22,7 @@ export default {
     data() {
         return {
             showList: false,
-            selectedPunct: "",
+            selectedPunct: null,
             punctsList:[
                 "Сотрудничество",
                 "Карьера",

@@ -12,6 +12,7 @@ class SenderController extends Controller
     public function send_consultation(Request $request) {
         $data = $request->validate([
             "name" => [],
+            "subject" => [],
             "phone" => ['required','string']
         ]);
 

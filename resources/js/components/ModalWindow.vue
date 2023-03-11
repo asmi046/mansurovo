@@ -66,6 +66,7 @@ export default {
                 _token: this._token,
                 name: this.name,
                 phone: this.phone,
+                subject: (this.subject == null)?"общие вопросы":this.subject,
 
             })
             .then((response) => {
