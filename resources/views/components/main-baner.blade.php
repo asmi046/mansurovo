@@ -54,7 +54,7 @@
 
                                             <div class="slider-bg__column">
                                                 <div class="slider-bg__card slider-bg__card_04">
-                                                    <h3 class="slider-bg__card-title">{{$item->value3}}</h3>
+                                                    <h3 class="slider-bg__card-title">{{$item->value4}}</h3>
                                                     <p class="slider-bg__card-subtitle">
                                                         {{$item->comment4}}
                                                     </p>

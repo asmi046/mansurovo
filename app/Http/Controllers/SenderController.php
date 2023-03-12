@@ -23,7 +23,10 @@ class SenderController extends Controller
         if ($data['subject'] === "Карьера" ) $send_adr[] = "hr@mansurovoagro.ru";
         if ($data['subject'] === "СМИ" ) $send_adr[] = "info@mansurovoagro.ru";
 
-        Mail::to($send_adr)->send(new ConsultMail($data));
+        foreach ($send_adr as $adr) {
+            Mail::to($adr)->send(new ConsultMail($data));
+        }
+
 
         return ["Сообщение отправлено"];
     }
