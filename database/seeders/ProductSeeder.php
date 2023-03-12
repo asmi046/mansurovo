@@ -138,24 +138,36 @@ class ProductSeeder extends Seeder
                 'img3' => "classic_03.jpg",
                 'img4' => "classic_04.jpg",
                 'description' => file_get_contents(public_path('facer/text/classic.html'))
+                ],
+
+                [
+                'title' => "Овца куйбышевской породы",
+                'slug' => Str::slug("Овца куйбышевской породы"),
+                'quote' => '',
+                'category' => "Овцы",
+                'img1' => "beee_01.webp",
+                'img2' => "beee_02.webp",
+                'img3' => "",
+                'img4' => "",
+                'description' => file_get_contents(public_path('facer/text/beee_k.html'))
                 ]
             ];
 
         foreach($main_data as $item) {
-            Storage::disk('public')->put($item["img1"], file_get_contents(public_path('facer/img/'.$item["img1"])), 'public');
+            if (!empty($item["img1"])) Storage::disk('public')->put($item["img1"], file_get_contents(public_path('facer/img/'.$item["img1"])), 'public');
 
-            Storage::disk('public')->put($item["img2"], file_get_contents(public_path('facer/img/'.$item["img2"])), 'public');
+            if (!empty($item["img2"])) Storage::disk('public')->put($item["img2"], file_get_contents(public_path('facer/img/'.$item["img2"])), 'public');
 
-            Storage::disk('public')->put($item["img3"], file_get_contents(public_path('facer/img/'.$item["img3"])), 'public');
+            if (!empty($item["img3"])) Storage::disk('public')->put($item["img3"], file_get_contents(public_path('facer/img/'.$item["img3"])), 'public');
 
-            Storage::disk('public')->put($item["img4"], file_get_contents(public_path('facer/img/'.$item["img4"])), 'public');
+            if (!empty($item["img4"])) Storage::disk('public')->put($item["img4"], file_get_contents(public_path('facer/img/'.$item["img4"])), 'public');
         }
 
         for ($i = 0; $i<count($main_data); $i++) {
-            $main_data[$i]["img1"] = Storage::url($main_data[$i]["img1"]);
-            $main_data[$i]["img2"] = Storage::url($main_data[$i]["img2"]);
-            $main_data[$i]["img3"] = Storage::url($main_data[$i]["img3"]);
-            $main_data[$i]["img4"] = Storage::url($main_data[$i]["img4"]);
+            if (!empty($main_data[$i]["img1"])) $main_data[$i]["img1"] = Storage::url($main_data[$i]["img1"]);
+            if (!empty($main_data[$i]["img2"])) $main_data[$i]["img2"] = Storage::url($main_data[$i]["img2"]);
+            if (!empty($main_data[$i]["img3"])) $main_data[$i]["img3"] = Storage::url($main_data[$i]["img3"]);
+            if (!empty($main_data[$i]["img4"])) $main_data[$i]["img4"] = Storage::url($main_data[$i]["img4"]);
         }
 
         DB::table("products")->insert($main_data);
