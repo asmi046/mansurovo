@@ -33,7 +33,7 @@
                 <h3>Молоко</h3>
             </a>
 
-            <a class="product_line ouer_product" href="#">
+            <a href="{{route('products')}}" class="product_line ouer_product" href="#">
                 <div class="img_wrp">
                     <img  loading="lazy" src="{{asset("img/our-production/ouer_product.svg")}}" alt="">
                 </div>
