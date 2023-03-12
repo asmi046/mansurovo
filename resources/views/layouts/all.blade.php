@@ -44,9 +44,9 @@
         ])
     </head>
 
-    <body class="site_body" id="global_app">
+    <body class="site_body" >
         <x-header></x-header>
-        <div class="wrapper">
+        <div class="wrapper" id="global_app">
             @yield('content')
         </div>
         <x-footer></x-footer>
