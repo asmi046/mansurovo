@@ -50,7 +50,7 @@
                     <div class="slider-bg__card slider-bg__card_02">
                         <h3 class="slider-bg__card-title">500 +</h3>
                         <p class="slider-bg__card-subtitle">
-                            Племенное стадо овец куйбышевской породы.
+                            Племенное стадо овец Куйбышевской породы.
                         </p>
                     </div>
                 </div>
