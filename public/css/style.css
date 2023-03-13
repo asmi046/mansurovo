@@ -3603,14 +3603,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       flex-wrap: wrap;
 }
 
+
+.footer__menu .menu-list__item,
 .footer__menu-item {
   margin-right: 32px;
 }
 
+.footer__menu .menu-list__item:last-child,
 .footer__menu-item:last-child {
   margin-right: 0;
 }
 
+.footer__menu .menu-list__link,
 .footer__menu-item-link {
   padding: 2px 0;
 }
@@ -5721,6 +5725,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
             align-items: center;
   }
 
+  .footer__menu .menu-list__item,
   .footer__menu-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
