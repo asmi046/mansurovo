@@ -30,17 +30,23 @@
                                 <img src="{{$product_info->img1}}" alt="{{$product_info->title}} - изображение 1">
                             </div>
 
-                            <div class="swiper-slide">
-                                <img src="{{$product_info->img2}}" alt="{{$product_info->title}} - изображение 2">
-                            </div>
+                            @if (!empty($product_info->img2))
+                                <div class="swiper-slide">
+                                    <img src="{{$product_info->img2}}" alt="{{$product_info->title}} - изображение 2">
+                                </div>
+                            @endif
 
-                            <div class="swiper-slide">
-                                <img src="{{$product_info->img3}}" alt="{{$product_info->title}} - изображение 3">
-                            </div>
+                            @if (!empty($product_info->img3))
+                                <div class="swiper-slide">
+                                    <img src="{{$product_info->img3}}" alt="{{$product_info->title}} - изображение 3">
+                                </div>
+                            @endif
 
-                            <div class="swiper-slide">
-                                <img src="{{$product_info->img4}}" alt="{{$product_info->title}} - изображение 4">
-                            </div>
+                            @if (!empty($product_info->img4))
+                                <div class="swiper-slide">
+                                    <img src="{{$product_info->img4}}" alt="{{$product_info->title}} - изображение 4">
+                                </div>
+                            @endif
                         </div>
                     </div>
 
