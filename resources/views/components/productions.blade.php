@@ -5,35 +5,35 @@
 
 
         <div class="product_in_main_wrapper">
-            <a class="product_line" href="#">
+            <a class="product_line" href="{{route('products')}}">
                 <div class="img_wrp">
                     <img loading="lazy" src="{{asset("img/our-production/01.webp")}}" alt="">
                 </div>
                 <h3>Зерно</h3>
             </a>
 
-            <a class="product_line" href="#">
+            <a class="product_line" href="{{route('products')}}">
                 <div class="img_wrp">
                     <img loading="lazy" src="{{asset("img/our-production/02.webp")}}" alt="">
                 </div>
                 <h3>Лошади</h3>
             </a>
 
-            <a class="product_line" href="#">
+            <a class="product_line" href="{{route('products')}}">
                 <div class="img_wrp">
                     <img loading="lazy" src="{{asset("img/our-production/03.webp")}}" alt="">
                 </div>
                 <h3>Мед</h3>
             </a>
 
-            <a class="product_line" href="#">
+            <a class="product_line" href="{{route('products')}}">
                 <div class="img_wrp">
                     <img loading="lazy" src="{{asset("img/our-production/04.webp")}}" alt="">
                 </div>
                 <h3>Молоко</h3>
             </a>
 
-            <a href="{{route('products')}}" class="product_line ouer_product" href="#">
+            <a href="{{route('products')}}" class="product_line ouer_product">
                 <div class="img_wrp">
                     <img  loading="lazy" src="{{asset("img/our-production/ouer_product.svg")}}" alt="">
                 </div>
