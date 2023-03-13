@@ -37,7 +37,7 @@ class SlideSeeder extends Seeder
 
             [
                 'title' => "Животноводческий <br/> комплекс",
-                'img' => "bn2.webp",
+                'img' => "bn3.webp",
                 'subtitle' => "Устойчивое развитие по<br/> основным направлениям",
                 'value1' => "3290 +",
                 'comment1' => "Поголовье КРС",
@@ -51,7 +51,7 @@ class SlideSeeder extends Seeder
 
             [
                 'title' => "Растениеводство и<br/> семеноводство",
-                'img' => "bn3.webp",
+                'img' => "bn2.webp",
                 'subtitle' => "Полное обеспечение собственным<br/> посевным материалом",
                 'value1' => "23,8 Га",
                 'comment1' => "Собственной пашни",
@@ -64,7 +64,7 @@ class SlideSeeder extends Seeder
             ],
 
             [
-                'title' => "Коневодство <br/> «Коный завод №12»",
+                'title' => "Коневодство <br/> «Конный завод №12»",
                 'img' => "bn4.webp",
                 'subtitle' => "Сохраняем традиции коневодства<br/> в нашем регионе",
                 'value1' => "102",

@@ -27,11 +27,11 @@ class CategorySeeder extends Seeder
                 'slug' => Str::slug("Молоко"),
                 'img' => "cow.webp",
                 'banner' => "cow_hb.webp",
-                'quote' => "Предлагаем лошадей и жеребят от Александровского конезавода",
+                'quote' => "Предлагаем молоко высшего качества",
                 'description' => "",
 
                 "seo_title" => 'Молоко',
-                "seo_description" => 'Предлагаем лошадей и жеребят от Александровского конезавода',
+                "seo_description" => 'Предлагаем молоко высшего качества',
             ],
 
             [
