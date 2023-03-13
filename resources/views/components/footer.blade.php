@@ -3,7 +3,7 @@
 
         <div class="footer__row d-flex">
 
-            <a href="index.html" class="logo-icon footer__logo"></a>
+            <a href="{{route('home')}}" class="logo-icon footer__logo"></a>
 
             <ul class="footer__menu">
                 <x-menu-puncts></x-menu-puncts>
