@@ -12,7 +12,7 @@
 
 			<div class="header__navigation">
 
-				<a href="#" class="header__conf-policy">Политика конфиденциальности</a>
+				<a href="{{route('policy')}}" class="header__conf-policy">Политика конфиденциальности</a>
 
 				<button class="header__search-icon search_open"></button>
 
