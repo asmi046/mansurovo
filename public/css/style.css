@@ -4958,6 +4958,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     }
 }
 
+.subtype {
+    margin: 10px 0;
+}
+
+.subtype a{
+    margin: 10px 20px 10px 0;
+    background-color: white;
+    color:#7eaf00;
+    border: 1px solid #7eaf00;
+}
+
+.subtype a.active {
+    color:white;
+    background-color: #7eaf00;
+}
+
 /* Категория прордукции end */
 
 /* Страница продукта */
@@ -5488,6 +5504,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-bottom: 30px;
   }
 }
+
+
 
 @media (max-width: 991.98px) {
   .select__title {

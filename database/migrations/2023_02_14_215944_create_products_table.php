@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('quote')->nullable();
             $table->string('category');
+            $table->string('subtype')->nullable();
             $table->string('img1');
             $table->string('img2');
             $table->string('img3');

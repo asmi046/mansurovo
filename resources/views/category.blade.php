@@ -17,6 +17,14 @@
         <div class="_container">
             <x-breadcrumbs :product="$cat_info->title"></x-breadcrumbs>
 
+            @if (!$subtype->isEmpty())
+                <div class="subtype">
+                    <a href="{{route(Route::currentRouteName(), ['slug' => $category_slug])}}" @class(['btn', 'active' => ( $main_subtype === "%" ) ])>Все</a>
+                    @foreach ($subtype as $item)
+                        <a href="{{route(Route::currentRouteName(), ['subtype' => $item->subtype, 'slug' => $category_slug])}}" @class(['btn', 'active' =>($main_subtype == $item->subtype) ]) >{{$item->subtype}}</a>
+                    @endforeach
+                </div>
+            @endif
             <div class="products_in_page">
                 @foreach ($products as $item)
                     <x-product-card :item="$item" :category_slug="$category_slug"></x-product-card>
