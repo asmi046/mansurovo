@@ -22,7 +22,11 @@
                 <a href="tel:+74712540630" class="phone">+7 (4712) 54-06-30</a>
                 <a href="#" class="btn re_call">Заказать звонок</a>
                 <a href="mailto:info@mansurovoagro.ru" class="mail">info@mansurovoagro.ru</a>
-                <a href="#" class="ca_card">Скачать карточку контрагента</a>
+
+                <a href="{{asset('files/AK Mansurovo.pdf')}}" class="ca_card">Скачать карточку контрагента: АО «Агрокомплекс «Мансурово»</a>
+                <a href="{{asset('files/AKZ.pdf')}}" class="ca_card">Скачать карточку контрагента: ОАО «Александровский конный завод № 12»</a>
+                <a href="{{asset('files/Mansurovo-agro.pdf')}}" class="ca_card">Скачать карточку контрагента: ООО «Мансурово-Агро»</a>
+
                 <h3>Адрес:</h3>
                 <p class="adress">306623, Курская область, Советский район,  д. Пожидаевка, д.57.</p>
             </div>

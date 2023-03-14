@@ -15,7 +15,7 @@ function init () {
 
     // Указываем координаты метки
     myGeoObjects = new ymaps.Placemark([51.76327351954063,37.466686396972676],{
-                                        hintContent: '<div class="map-hint">Авто профи, Курск, ул.Комарова, 16</div>',
+                                        hintContent: '<div class="map-hint">Агрокомплекс «Мансурово»</div>',
                                         balloonContent: '<div class="map-hint"></div>',
                                     }
                                     ,{

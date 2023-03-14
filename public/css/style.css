@@ -4638,6 +4638,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /* Блок контактов на главной end */
 
+/* Страница контактов */
+
+.ca_card {
+    position:relative;
+    padding:10px 0 10px 40px;
+}
+
+.ca_card:before{
+    content: "";
+    position: absolute;
+    width:25px;
+    height:25px;
+    background-image: url(../img/icons/pdf_doc.svg);
+    background-size: contain;
+    background-position: center;
+    left: 0;
+    top:calc(50% - 13px)
+ }
+
+/* Страница контактов end */
+
 /* Хлебные крошки */
 
 .uni_breadcrumbs ._container{
