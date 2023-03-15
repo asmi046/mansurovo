@@ -17,7 +17,7 @@
         <div class="_container">
             <x-breadcrumbs :product="$cat_info->title"></x-breadcrumbs>
 
-            @if (!$subtype->isEmpty())
+            @if (count($subtype) > 1)
                 <div class="subtype">
                     <a href="{{route(Route::currentRouteName(), ['slug' => $category_slug])}}" @class(['btn', 'active' => ( $main_subtype === "%" ) ])>Все</a>
                     @foreach ($subtype as $item)

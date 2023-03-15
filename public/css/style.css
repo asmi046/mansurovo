@@ -4908,6 +4908,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .products_in_page .product h2{
     font-size: 42px;
     margin-bottom: 20px;
+    word-break: break-all;
 }
 
 .products_in_page .product p{
@@ -4920,6 +4921,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 @media (max-width: 768px) {
+    .products_in_page .product p{
+        width:80%
+    }
+
     .products_in_page {
         flex-direction: column;
     }
@@ -4948,6 +4953,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     line-height: 28.8px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    word-break: break-all;
 }
 
 .products_in_page .product_item {
