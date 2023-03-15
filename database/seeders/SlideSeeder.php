@@ -32,7 +32,7 @@ class SlideSeeder extends Seeder
                 'value3' => "40 000 тон",
                 'comment3' => "Элеватор силосного типа",
                 'value4' => "175",
-                'comment4' => "Единиц сельскохоз техники",
+                'comment4' => "Единиц сельхоз техники",
             ],
 
             [
@@ -60,7 +60,7 @@ class SlideSeeder extends Seeder
                 'value3' => "9 +",
                 'comment3' => "Возделываемых культур",
                 'value4' => "175",
-                'comment4' => "Единиц сельскохоз техники",
+                'comment4' => "Единиц сельхоз техники",
             ],
 
             [
