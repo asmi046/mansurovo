@@ -17,6 +17,11 @@ let sliderBg = new Swiper('.slider-bg', {
 		}
 	},
 
+    navigation: {
+        nextEl: ".main_swiper-button-next",
+        prevEl: ".main_swiper-button-prev",
+    },
+
 	on: {
 		lazyImageReady: function () {
 			ibg();

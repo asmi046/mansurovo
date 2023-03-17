@@ -3939,6 +3939,25 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin: 13px 0;
 }
 
+.main_bn_btn {
+    position: absolute;
+    z-index: 10000;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #7EAF00;
+    background: white;
+    top:calc(50% - 20px);
+    border-radius: 40px;
+}
+
+.main_btn_prev {
+
+}
+.main_btn_next {
+
+}
+
+
 .directions-agro__column-left {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 750px;
@@ -4003,6 +4022,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: flex;
   margin-top: 38px;
 }
+
 
 .directions-agro__buttonBlock .swiper-button {
   position: static;
