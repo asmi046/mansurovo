@@ -82,7 +82,7 @@
             <h2>Фотогалерея</h2>
 
             <div class="swiper_obj mb_30">
-                <div class="swiper work_n_galery">
+                <div class="swiper wiper_obj_product work_n_galery">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
@@ -103,6 +103,9 @@
 
                     </div>
                 </div>
+
+                <button class="main_bn_btn main_btn_prev main_swiper-button-prev"></button>
+                <button class="main_bn_btn main_btn_next main_swiper-button-next"></button>
 
                 <div class="swiper-pagination"></div>
             </div>

@@ -5,7 +5,11 @@ let sliderBg = new Swiper('.slider-bg', {
 	slidesPerView: 1,
 	spaceBetween: 0, //отступ в пикселях
 	autoHeight: true,
-	speed: 2000,
+	speed: 1000,
+    autoplaySpeed:7000,
+    autoplay: {
+        delay: 7000,
+      },
 	loop: true, //циклично
 	pagination: {
 		el: '.slider-bg-pagination-fraction',
@@ -115,8 +119,19 @@ var swiper = new Swiper(".product_page_galery", {
 });
 
 var swiper = new Swiper(".work_n_galery", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+    speed: 1000,
+    autoplay: {
+        delay: 7000,
+      },
+	loop: true, //циклично
+
+    navigation: {
+        nextEl: ".main_swiper-button-next",
+        prevEl: ".main_swiper-button-prev",
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 });

@@ -69,9 +69,10 @@
 
 						</div>
 
-                        <button class="main_bn_btn main_btn_prev main_swiper-button-prev"></button>
-                        <button class="main_bn_btn main_btn_prev main_swiper-button-next"></button>
-
+                        <div class="nav_btn_wriper">
+                            <button class="main_bn_btn main_btn_prev main_swiper-button-prev"></button>
+                            <button class="main_bn_btn main_btn_next main_swiper-button-next"></button>
+                        </div>
 					</div>
 					<div class="slider-bg-pagination-fraction"></div>
 				</div>
