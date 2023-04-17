@@ -27,6 +27,18 @@ use Illuminate\Http\Request;
 class NewsEditScreen extends Screen
 {
     /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.news'
+        ];
+    }
+
+    /**
      * Query data.
      *
      * @return array

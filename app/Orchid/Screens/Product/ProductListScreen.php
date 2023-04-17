@@ -13,6 +13,18 @@ use Orchid\Support\Facades\Toast;
 
 class ProductListScreen extends Screen
 {
+        /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.product'
+        ];
+    }
+
     /**
      * Query data.
      *

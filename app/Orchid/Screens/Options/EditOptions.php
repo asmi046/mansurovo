@@ -17,6 +17,18 @@ use Illuminate\Http\Request;
 
 class EditOptions extends Screen
 {
+        /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.options'
+        ];
+    }
+
     /**
      * Query data.
      *

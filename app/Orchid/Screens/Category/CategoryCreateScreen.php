@@ -20,6 +20,18 @@ use Illuminate\Http\Request;
 
 class CategoryCreateScreen extends Screen
 {
+            /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.category'
+        ];
+    }
+
     /**
      * Query data.
      *

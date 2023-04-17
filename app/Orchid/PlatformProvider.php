@@ -32,23 +32,28 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Опции сайта')
                 ->icon('settings')
                 ->route('platform.options')
-                ->title('Настройки сайта'),
+                ->title('Настройки сайта')
+                ->permission('per.options'),
 
             Menu::make('Категории товара')
                 ->icon('list')
-                ->route('platform.category'),
+                ->route('platform.category')
+                ->permission('per.category'),
 
             Menu::make('Товары')
                 ->icon('grid')
-                ->route('platform.product'),
+                ->route('platform.product')
+                ->permission('per.product'),
 
             Menu::make('Вакансии')
                 ->icon('user-follow')
-                ->route('platform.vacancy'),
+                ->route('platform.vacancy')
+                ->permission('per.vacancy'),
 
             Menu::make('Новости')
                 ->icon('book-open')
-                ->route('platform.news'),
+                ->route('platform.news')
+                ->permission('per.news'),
 
             // Menu::make('Example screen')
             //     ->icon('monitor')
@@ -101,16 +106,16 @@ class PlatformProvider extends OrchidServiceProvider
             //     ->target('_blank')
             //     ->badge(fn () => Dashboard::version(), Color::DARK()),
 
-            // Menu::make(__('Users'))
-            //     ->icon('user')
-            //     ->route('platform.systems.users')
-            //     ->permission('platform.systems.users')
-            //     ->title(__('Access rights')),
+            Menu::make(__('Users'))
+                ->icon('user')
+                ->route('platform.systems.users')
+                ->permission('platform.systems.users')
+                ->title(__('Access rights')),
 
-            // Menu::make(__('Roles'))
-            //     ->icon('lock')
-            //     ->route('platform.systems.roles')
-            //     ->permission('platform.systems.roles'),
+            Menu::make(__('Roles'))
+                ->icon('lock')
+                ->route('platform.systems.roles')
+                ->permission('platform.systems.roles'),
         ];
     }
 
@@ -135,6 +140,13 @@ class PlatformProvider extends OrchidServiceProvider
             ItemPermission::group(__('System'))
                 ->addPermission('platform.systems.roles', __('Roles'))
                 ->addPermission('platform.systems.users', __('Users')),
+
+            ItemPermission::group(__('Возможности по редактированию сайта'))
+                ->addPermission('per.news', __('Новости'))
+                ->addPermission('per.options', __('Опции'))
+                ->addPermission('per.category', __('Категории'))
+                ->addPermission('per.product', __('Товары'))
+                ->addPermission('per.vacancy', __('Вакансии'))
         ];
     }
 }

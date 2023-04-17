@@ -27,6 +27,18 @@ use Illuminate\Http\Request;
 class ProductEditScreen extends Screen
 {
     /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.product'
+        ];
+    }
+
+    /**
      * Query data.
      *
      * @return array

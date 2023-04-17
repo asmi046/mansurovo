@@ -10,6 +10,18 @@ use App\Orchid\Layouts\Options\OptionsTable;
 
 class OptionsList extends Screen
 {
+            /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.options'
+        ];
+    }
+
     /**
      * Query data.
      *

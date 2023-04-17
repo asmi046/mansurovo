@@ -25,6 +25,19 @@ use Illuminate\Http\Request;
 
 class VacancyEditScreen extends Screen
 {
+            /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.vacancy'
+        ];
+    }
+
+
     /**
      * Query data.
      *

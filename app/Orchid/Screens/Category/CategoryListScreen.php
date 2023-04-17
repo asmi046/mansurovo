@@ -14,6 +14,18 @@ use Orchid\Support\Facades\Toast;
 class CategoryListScreen extends Screen
 {
     /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.category'
+        ];
+    }
+
+    /**
      * Query data.
      *
      * @return array

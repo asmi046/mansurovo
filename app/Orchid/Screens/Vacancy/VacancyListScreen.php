@@ -14,6 +14,19 @@ use Orchid\Support\Facades\Toast;
 class VacancyListScreen extends Screen
 {
     /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.vacancy'
+        ];
+    }
+
+
+    /**
      * Query data.
      *
      * @return array
