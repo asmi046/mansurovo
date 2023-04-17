@@ -80,7 +80,7 @@ class NewsEditScreen extends Screen
                     ->horizontal(),
 
                 DateTimer::make('news_data')
-                    ->value(date("d.m.Y' H:i:s", strtotime($this->news->news_data)))
+                    ->value(date("Y-m-d' H:i:s", strtotime($this->news->news_data)))
                     ->enableTime()
                     ->horizontal()
                     ->title('Дата публикации'),
