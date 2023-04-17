@@ -116,7 +116,7 @@ Route::screen('/news', NewsListScreen::class)
     ->parent('platform.index')
     ->push(__('Новости'), route('platform.news')));
 
-Route::screen('/news/{id}/edit', VacancyEditScreen::class)
+Route::screen('/news/{id}/edit', NewsEditScreen::class)
     ->name('platform.news_edit')->breadcrumbs(fn (Trail $trail, $id) => $trail
     ->parent('platform.news')
     ->push(__('Редактирование новости'), route('platform.news_edit', $id)));

@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 use Orchid\Screen\AsSource;
 
+use Illuminate\Support\Str;
+
 class News extends Model
 {
     use HasFactory;

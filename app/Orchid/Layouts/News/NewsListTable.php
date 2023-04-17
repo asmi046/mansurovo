@@ -37,7 +37,7 @@ class NewsListTable extends Table
                     return "<img width='50' height='50' src='".($element->thumb?$element->thumb:asset("img/noPhoto.jpg"))."'>";
                 }
             ),
-            TD::make('title', 'Наименование')->width('35%'),
+            TD::make('title', 'Заголовок')->width('35%'),
             TD::make('quote', 'Цитата')->width('35%'),
 
             TD::make('action', 'Действие')->render(function($element) {

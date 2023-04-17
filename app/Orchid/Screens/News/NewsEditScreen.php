@@ -17,6 +17,7 @@ use Orchid\Screen\Fields\Switcher;
 use Orchid\Screen\Fields\TextArea;
 use Orchid\Screen\Fields\Relation;
 use Orchid\Screen\Actions\ModalToggle;
+use Orchid\Screen\Fields\DateTimer;
 
 
 use App\Orchid\Layouts\Product\ProductImageTable;
@@ -71,54 +72,79 @@ class NewsEditScreen extends Screen
     {
         return [
             Layout::rows([
-
                 Input::make('title')
                     ->title('Заголовок')
-                    ->value($this->news->title)
                     ->help('Заголовок новости')
+                    ->value($this->news->title)
+                    ->required()
                     ->horizontal(),
 
-                Input::make('place')
-                    ->title('Площадка')
-                    ->value($this->vacancy->place)
-                    ->help('Место работы')
+                DateTimer::make('news_data')
+                    ->value(date("d.m.Y' H:i:s", strtotime($this->news->news_data)))
+                    ->enableTime()
+                    ->horizontal()
+                    ->title('Дата публикации'),
+
+
+
+                Input::make('slug')
+                    ->title('Ссылка')
+                    ->value($this->news->slug)
+                    ->help('Отображаемая ссылка (заполнится автоматически)')
                     ->horizontal(),
 
-                Input::make('grafic')
-                    ->title('График работы')
-                    ->value($this->vacancy->grafic)
-                    ->help('График работы')
-                    ->horizontal(),
+                TextArea::make('quote')
+                    ->title('Цитата')
+                    ->required()
+                    ->horizontal()
+                    ->value($this->news->quote)
+                    ->help('Отрывок для карточки в разделе'),
 
-                Input::make('price')
-                    ->title('Заработная плата')
-                    ->value($this->vacancy->price)
-                    ->help('Заработная плата')
-                    ->horizontal(),
+                Quill::make('description')
+                    ->title('Текст новости')
+                    ->required()
+                    ->value($this->news->description)
+                    ->help('Полный текст новости (отображается на самой странице)'),
 
-                Quill::make('ob')->title('Обязанности')->value($this->vacancy->ob),
-                Quill::make('treb')->title('Требования')->value($this->vacancy->treb),
-                Quill::make('usl')->title('Услуги')->value($this->vacancy->usl),
+                Picture::make('thumb')->title('Изображение')->storage('public')->value($this->news->thumb)->required()->targetRelativeUrl(),
 
                 Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
             ])->title('Основные поля'),
+
+            Layout::rows([
+                Input::make('seo_title')
+                    ->title('SEO заголовок')
+                    ->value($this->news->seo_title)
+                    ->help('SEO заголовок')
+                    ->horizontal(),
+
+                TextArea::make('seo_description')
+                    ->title('SEO описание')
+                    ->value($this->news->seo_description)
+                    ->help('SEO описание')
+                    ->horizontal(),
+                Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
+            ])->title('SEO поля'),
         ];
     }
 
-    public function save_info(Vacancy $vacancy, Request $request) {
+    public function save_info(News $news, Request $request) {
 
         $new_data = $request->validate([
-            'name' => ['required', 'string'],
-            'place' => ['required', 'string'],
-            'grafic' => ['required', 'string'],
-            'price' => [],
-            'ob' => [],
-            'treb' => [],
-            'usl' => [],
+
+            'news_data' => [],
+            'title' => ['required', 'string'],
+            'slug' => [],
+            'thumb' => ['required', 'string'],
+            'quote' => ['required', 'string'],
+            'description' => ['required', 'string'],
+            'seo_title' => [],
+            'seo_description' => [],
         ]);
 
 
-        Vacancy::where('id', $vacancy->id)->update($new_data);
-        Toast::info("Вакансия сохранена");
+        News::where('id', $news->id)->update($new_data);
+
+        Toast::info("Новость сохранена");
     }
 }

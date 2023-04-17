@@ -4,7 +4,7 @@ namespace App\Orchid\Screens\News;
 
 use Orchid\Screen\Screen;
 
-use App\Models\Vacancy;
+use App\Models\News;
 
 use Orchid\Support\Facades\Layout;
 use Orchid\Screen\Fields\Input;
@@ -12,6 +12,9 @@ use Orchid\Screen\Fields\Quill;
 use Orchid\Support\Facades\Toast;
 use Orchid\Screen\Actions\Button;
 use Orchid\Support\Color;
+use Orchid\Screen\Fields\Picture;
+use Orchid\Screen\Fields\DateTimer;
+use Orchid\Screen\Fields\TextArea;
 
 use Illuminate\Http\Request;
 
@@ -35,7 +38,7 @@ class NewsCreateScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Добавление вакансии';
+        return 'Добавление новости';
     }
 
     /**
@@ -57,53 +60,76 @@ class NewsCreateScreen extends Screen
     {
         return [
             Layout::rows([
-
-                Input::make('name')
-                    ->title('Наименование')
-                    ->help('Название вакансии')
+                Input::make('title')
+                    ->title('Заголовок')
+                    ->help('Заголовок новости')
+                    ->required()
                     ->horizontal(),
 
-                Input::make('place')
-                    ->title('Площадка')
-                    ->help('Место работы')
+                DateTimer::make('news_data')
+                    ->value(date("d.m.Y' H:i:s"))
+                    ->enableTime()
+                    ->horizontal()
+                    ->title('Дата публикации'),
+
+
+
+                Input::make('slug')
+                    ->title('Ссылка')
+                    ->help('Отображаемая ссылка (заполнится автоматически)')
                     ->horizontal(),
 
-                Input::make('grafic')
-                    ->title('График работы')
-                    ->help('График работы')
-                    ->horizontal(),
+                TextArea::make('quote')
+                    ->title('Цитата')
+                    ->required()
+                    ->horizontal()
+                    ->help('Отрывок для карточки в разделе'),
 
-                Input::make('price')
-                    ->title('Заработная плата')
-                    ->help('Заработная плата')
-                    ->horizontal(),
+                Quill::make('description')
+                    ->title('Текст новости')
+                    ->required()
 
-                Quill::make('ob')->title('Обязанности'),
-                Quill::make('treb')->title('Требования'),
-                Quill::make('usl')->title('Услуги'),
+                    ->help('Полный текст новости (отображается на самой странице)'),
+
+                Picture::make('thumb')->title('Изображение')->storage('public')->required()->targetRelativeUrl(),
 
                 Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
             ])->title('Основные поля'),
+
+            Layout::rows([
+                Input::make('seo_title')
+                    ->title('SEO заголовок')
+                    ->help('SEO заголовок')
+                    ->horizontal(),
+
+                TextArea::make('seo_description')
+                    ->title('SEO описание')
+                    ->help('SEO описание')
+                    ->horizontal(),
+                Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
+            ])->title('SEO поля'),
         ];
     }
 
     public function save_info(Request $request) {
 
         $new_data = $request->validate([
-            'name' => ['required', 'string'],
-            'place' => ['required', 'string'],
-            'grafic' => ['required', 'string'],
-            'price' => [],
-            'ob' => [],
-            'treb' => [],
-            'usl' => [],
+
+            'news_data' => [],
+            'title' => ['required', 'string'],
+            'slug' => [],
+            'thumb' => ['required', 'string'],
+            'quote' => ['required', 'string'],
+            'description' => ['required', 'string'],
+            'seo_title' => [],
+            'seo_description' => [],
         ]);
 
 
-        Vacancy::create($new_data);
+        News::create($new_data);
 
-        Toast::info("Категория добавлена");
+        Toast::info("Новость добавлена добавлена");
 
-        return redirect()->route('platform.vacancy');
+        return redirect()->route('platform.news');
     }
 }
