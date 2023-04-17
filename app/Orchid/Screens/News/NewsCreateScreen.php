@@ -20,6 +20,19 @@ use Illuminate\Http\Request;
 
 class NewsCreateScreen extends Screen
 {
+
+    /**
+     * Permission
+     *
+     * @return iterable|null
+     */
+    public function permission(): ?iterable
+    {
+        return [
+            'per.news'
+        ];
+    }
+
     /**
      * Query data.
      *
