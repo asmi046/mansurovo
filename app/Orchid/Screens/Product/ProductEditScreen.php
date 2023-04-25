@@ -105,6 +105,12 @@ class ProductEditScreen extends Screen
                     ->value($this->product_cat)
                     ->help('Выберите категорию'),
 
+                Input::make('subtype')
+                    ->title('Подкатегория')
+                    ->value($this->product->subtype)
+                    ->help('Дополнительное деление кнутри категории'),
+
+
                 TextArea::make('quote')->title('Цитата')->value($this->product->quote),
                 Quill::make('description')->title('Описание')->value($this->product->description),
 
@@ -146,6 +152,7 @@ class ProductEditScreen extends Screen
             'slug' => [],
             'quote' => [],
             'category' => ['required', 'string'],
+            'subtype' => [],
             'img1' => ['required', 'string'],
             'img2' => [],
             'img3' => [],
