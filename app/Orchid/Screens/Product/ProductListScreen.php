@@ -33,7 +33,7 @@ class ProductListScreen extends Screen
     public function query(): iterable
     {
         return [
-            "products" => Product::paginate(15)
+            "products" => Product::orderByDesc("created_at")->paginate(15)
         ];
     }
 
@@ -55,7 +55,7 @@ class ProductListScreen extends Screen
     public function commandBar(): iterable
     {
         return [
-            Link::make('Добавить товар')->route('platform.category_create')->type(Color::SUCCESS())
+            Link::make('Добавить товар')->route('platform.product_create')->type(Color::SUCCESS())
         ];
     }
 

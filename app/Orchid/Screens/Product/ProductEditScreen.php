@@ -128,10 +128,10 @@ class ProductEditScreen extends Screen
 
             Layout::rows([
 
-                Picture::make('img1')->title('Загрузить изображение №1')->targetRelativeUrl()->value($this->product->img1),
-                Picture::make('img2')->title('Загрузить изображение №2')->targetRelativeUrl()->value($this->product->img2),
-                Picture::make('img3')->title('Загрузить изображение №3')->targetRelativeUrl()->value($this->product->img3),
-                Picture::make('img4')->title('Загрузить изображение №4')->targetRelativeUrl()->value($this->product->img4),
+                Picture::make('img1')->title('Загрузить изображение №1')->storage('public')->targetRelativeUrl()->value($this->product->img1),
+                Picture::make('img2')->title('Загрузить изображение №2')->storage('public')->targetRelativeUrl()->value($this->product->img2),
+                Picture::make('img3')->title('Загрузить изображение №3')->storage('public')->targetRelativeUrl()->value($this->product->img3),
+                Picture::make('img4')->title('Загрузить изображение №4')->storage('public')->targetRelativeUrl()->value($this->product->img4),
 
                 Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
             ])->title('Изображения'),
@@ -147,9 +147,9 @@ class ProductEditScreen extends Screen
             'quote' => [],
             'category' => ['required', 'string'],
             'img1' => ['required', 'string'],
-            'img1' => [],
-            'img1' => [],
-            'img1' => [],
+            'img2' => [],
+            'img3' => [],
+            'img4' => [],
             'description' => [],
             'seo_title' => [],
             'seo_description' => [],

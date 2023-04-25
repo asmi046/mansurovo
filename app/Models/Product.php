@@ -21,6 +21,7 @@ class Product extends Model
         'category',
         'img1',
         'img2',
+        'img3',
         'img4',
         'description',
         'seo_title',
