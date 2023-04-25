@@ -19,6 +19,7 @@ class Product extends Model
         'slug',
         'quote',
         'category',
+        'subtype',
         'img1',
         'img2',
         'img3',

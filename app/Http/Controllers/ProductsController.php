@@ -25,7 +25,7 @@ class ProductsController extends Controller
             $main_subtype = $request->input('subtype');
 
         $cat_info = Category::where("slug", $slug)->first();
-        $products = $cat_info->cat_product()->where('subtype', 'LIKE', $main_subtype)->get();
+        $products = $cat_info->cat_product()->where('subtype', 'LIKE', $main_subtype)->orWhere('subtype', NULL)->get();
 
         $subtype = $cat_info->cat_product()->select('subtype')->groupBy('subtype')->get();
 
