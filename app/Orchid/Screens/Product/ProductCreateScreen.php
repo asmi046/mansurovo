@@ -97,7 +97,6 @@ class ProductCreateScreen extends Screen
 
                 Input::make('subtype')
                     ->title('Подкатегория')
-                    ->value($this->product->subtype)
                     ->help('Дополнительное деление кнутри категории'),
 
 
