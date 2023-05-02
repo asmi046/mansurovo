@@ -33,7 +33,7 @@ class NewsController extends Controller
 
 
         $next_year = $main_year+1;
-        $main_news = News::where("news_data", '>=', $main_year."-01-01")->where("news_data", '<=', $next_year."-01-01")->get();
+        $main_news = News::where("news_data", '>=', $main_year."-01-01")->where("news_data", '<=', $next_year."-01-01")->orderBy('news_data', 'desc')->get();
 
         return view('news', ['news' => $main_news, 'all_yer' => $all_news_year, 'current_yer' => $main_year]);
     }
