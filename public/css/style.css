@@ -6436,3 +6436,20 @@ transform: rotate(180deg);
 .tg {
     background-image: url(../img/icons/soceal/tg.svg);
 }
+
+.menu_body .vk {
+    background-image: url(../img/icons/soceal/vk_white.svg);
+}
+
+.menu_body .tg {
+    background-image: url(../img/icons/soceal/tg_white.svg);
+}
+
+
+.menu_body .social {
+    margin-top: auto;
+}
+
+.menu_body .social .social_icon{
+    margin: 10px 10px;
+}
