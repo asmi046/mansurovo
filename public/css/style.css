@@ -6412,4 +6412,27 @@ transform: rotate(180deg);
 
 ._webp .news-agro__card-img{ background-image: url(../img/nophoto.webp); }
 
+.social {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid #7eaf00;
+}
 
+.social_icon {
+    width:25px;
+    height:25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto 10px;
+}
+
+.vk {
+    background-image: url(../img/icons/soceal/vk.svg);
+}
+
+.tg {
+    background-image: url(../img/icons/soceal/tg.svg);
+}

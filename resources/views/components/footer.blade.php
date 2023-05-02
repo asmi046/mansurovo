@@ -7,13 +7,12 @@
 
             <ul class="footer__menu">
                 <x-menu-puncts></x-menu-puncts>
-                {{-- <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">О компании</a></li>
-                <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Направления деятельности</a></li>
-                <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Продукция</a></li>
-                <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Вакансии</a></li>
-                <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Контакты</a></li> --}}
             </ul>
 
+            <div class="social">
+                <a href="https://vk.com/club174172169" title="Агрокомплекс Мансурово в Vk" class="social_icon vk"></a>
+                <a href="https://t.me/mansurovogroup"  title="Агрокомплекс Мансурово в Telegram" class="social_icon tg"></a>
+            </div>
         </div>
 
     </div>
