@@ -4465,8 +4465,13 @@ transform: rotate(180deg);
     margin-bottom: 20px;
 }
 
+.news_prev .left {
+    flex: 1;
+}
+
 .news_prev .right {
     padding: 20px;
+    flex:1;
 }
 
 .thancs_icon_box {
