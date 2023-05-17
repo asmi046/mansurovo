@@ -11,10 +11,16 @@
 
 @section('content')
 
-<section class="contacts_text">
+<section class="contacts_text thencs_section">
     <div class="_container">
 
-        <h1>!!!</h1>
+        <x-breadcrumbs :title="$title"></x-breadcrumbs>
+        <h1>{{$title}}</h1>
+
+        <div class="thancs_icon_box">
+            <img src="{{asset("img/icons/msg_acsept.svg")}}" alt="{{$title}}">
+            <p>Мы получили Ваше сообщение! Наши специалисты перезвонят Вам в самое ближайшее время!</p>
+        </div>
 
     </div>
 </section>
