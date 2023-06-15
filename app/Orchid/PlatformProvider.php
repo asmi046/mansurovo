@@ -55,6 +55,11 @@ class PlatformProvider extends OrchidServiceProvider
                 ->route('platform.news')
                 ->permission('per.news'),
 
+            Menu::make('КП для семян')
+                ->icon('rub')
+                ->route('platform.semenabuy')
+                ->permission('per.product'),
+
             // Menu::make('Example screen')
             //     ->icon('monitor')
             //     ->route('platform.example')

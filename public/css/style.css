@@ -4954,6 +4954,9 @@ transform: rotate(180deg);
     z-index: 11;
 }
 
+
+
+.shadow,
 .products_in_page .product .shadow{
     position: absolute;
     z-index: 22;
@@ -5161,6 +5164,40 @@ transform: rotate(180deg);
     top: 5px
 }
 
+.text_styles table{
+    border-top: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+    width:100%;
+}
+
+.text_styles table td,
+.text_styles table th {
+    padding: 3px 10px;
+    text-align: left;
+    border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+
+@media (max-width: 768px) {
+    .text_styles table tr:first-child{
+        display: none;
+    }
+
+    .text_styles table tr:nth-child(2n) td{
+        background-color: #f1f1f1;
+    }
+
+    .text_styles table tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_styles table{
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+
 /* наша продукция на главной*/
 
 .product_in_main_wrapper {
@@ -5350,6 +5387,50 @@ transform: rotate(180deg);
 }
 
 /* Страницы направлений деятельности end */
+
+/* Баннер КП семян */
+
+.semena_buy_blk .shadow {
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(to right, #000000E1, #00000000);
+}
+
+
+.semena_buy_blk h2{
+    width: 50%;
+    color: white;
+    z-index: 100;
+    position: relative;
+    font-size: 36px;
+}
+
+.semena_buy_blk {
+    width: 100%;
+    padding: 30px 50px;
+    display: block;
+    background-image: url(../img/bg_carier.jpg);
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .semena_buy_blk h2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .semena_buy_blk h2{
+        font-size: 22px;
+    }
+}
+
+/* Баннер КП семян end */
 
 
 

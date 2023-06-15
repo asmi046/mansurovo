@@ -37,6 +37,8 @@ use App\Orchid\Screens\News\NewsCreateScreen;
 use App\Orchid\Screens\News\NewsEditScreen;
 use App\Orchid\Screens\News\NewsListScreen;
 
+use App\Orchid\Screens\Semena\SemenaBuyScreen;
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard Routes
@@ -126,7 +128,12 @@ Route::screen('/news/create', NewsCreateScreen::class)
     ->parent('platform.news')
     ->push(__('Добавление новости'), route('platform.news_create')));
 
+// Семена
 
+Route::screen('/semenabuy', SemenaBuyScreen::class)
+    ->name('platform.semenabuy')->breadcrumbs(fn (Trail $trail) => $trail
+    ->parent('platform.index')
+    ->push(__('КП для семена'), route('platform.semenabuy')));
 
 
 
