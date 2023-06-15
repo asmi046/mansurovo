@@ -12,6 +12,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SenderController;
 use App\Http\Controllers\PolicyController;
+use App\Http\Controllers\SemenaPriceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,7 @@ Route::get('/products/{slug}', [ProductsController::class, 'show_cat'])->name('p
 Route::get('/products/{slug}/{slug_p}', [ProductsController::class, 'show_page'])->name('products_page');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/policy', [PolicyController::class, 'index'])->name('policy');
+Route::get('/semena_buy', [SemenaPriceController::class, 'index'])->name('semena_buy');
 
 
 Route::get('/thencs', [SenderController::class, "show_thencs"])->name('thencs');
