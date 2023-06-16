@@ -19,7 +19,7 @@
 
             <a href="{{route('semena_buy')}}" class="semena_buy_blk">
                 <div class="shadow"></div>
-                <h2>Коммерческое предложение на продажу семян азимой и япровой пшеницы</h2>
+                <h2>Коммерческое предложение на продажу семян озимой и яровой пшеницы</h2>
             </a>
 
             <div class="products_in_page">
