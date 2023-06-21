@@ -5153,7 +5153,7 @@ transform: rotate(180deg);
     border: 2px solid #7eaf00;
 }
 
-.text_styles ul li ::before{
+.text_styles ul li::before{
     content: "";
     width:5px;
     height:5px;
@@ -5176,6 +5176,26 @@ transform: rotate(180deg);
     text-align: left;
     border-bottom: 1px solid darkgray;
     border-right: 1px solid darkgray;
+}
+
+.text_styles .quote {
+    background-color: rgb(126, 175, 0);
+    padding: 25px 50px 25px 50px;
+    color:white;
+    margin: 40px 0;
+    border-radius:20px;
+    background-image: url(../img/banner_blk_bg_2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.text_styles .quote ul li{
+    margin-bottom: 10px;
+}
+
+.text_styles .quote ul li::before{
+    background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -5258,6 +5278,10 @@ transform: rotate(180deg);
     .product_in_main_wrapper .product_line {
         width: 46%;
         margin-bottom: 20px;
+    }
+
+    .text_styles .quote {
+        background-size: cover;
     }
 }
 

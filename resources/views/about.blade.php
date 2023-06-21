@@ -17,7 +17,14 @@
 
                 <div class="text_styles">
                     {!! $options["about_company"] !!}
+
+                    <div class="quote">
+                        {!! $options["about_company_qb"] !!}
+                    </div>
                 </div>
+
+
+
             </div>
         </section>
 

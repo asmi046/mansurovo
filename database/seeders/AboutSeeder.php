@@ -27,6 +27,13 @@ class AboutSeeder extends Seeder
                     "value" => file_get_contents(public_path('texts//about.txt')),
                 ],
 
+                [
+                    "name" => "about_company_qb",
+                    "type" => "rich",
+                    'title' => 'О компании (Отдельный список)',
+                    "value" => file_get_contents(public_path('texts//about_qt.txt')),
+                ],
+
             ]);
     }
 }
