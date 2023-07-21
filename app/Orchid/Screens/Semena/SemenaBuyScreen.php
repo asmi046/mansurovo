@@ -10,11 +10,19 @@ use Orchid\Screen\Fields\Matrix;
 use Orchid\Screen\Fields\SimpleMDE;
 use App\Models\Option;
 
+use Orchid\Screen\Actions\Button;
+use Orchid\Support\Color;
+
+use Illuminate\Http\Request;
+
+use Orchid\Support\Facades\Toast;
 
 class SemenaBuyScreen extends Screen
 {
 
-    public $kp;
+    public $semenabuy_bottom_text;
+    public $semenabuy_top_text;
+    public $semenabuy_table;
 
     /**
      * Permission
@@ -35,10 +43,14 @@ class SemenaBuyScreen extends Screen
      */
     public function query(): iterable
     {
-        $kp = Option::where('name', "semenabuy")->first();
-        // dd($kp);
+        $semenabuy_bottom_text = Option::where('name', "semenabuy_bottom_text")->first();
+        $semenabuy_top_text = Option::where('name', "semenabuy_top_text")->first();
+        $semenabuy_table = Option::where('name', "semenabuy_table")->first();
+
         return [
-            "kp" => $kp
+            "semenabuy_bottom_text" => $semenabuy_bottom_text?$semenabuy_bottom_text->value:"",
+            "semenabuy_top_text" => $semenabuy_top_text?$semenabuy_top_text->value:"",
+            "semenabuy_table" => $semenabuy_table?$semenabuy_table->value:""
         ];
     }
 
@@ -73,14 +85,33 @@ class SemenaBuyScreen extends Screen
     {
         return [
             Layout::rows([
-                Quill::make('value')->toolbar(["text", "color", "header", "list", "format", "media"])->title('Текст КП')->value($this->kp->value),
-                Matrix::make('options')
-    ->columns([
-        'Attribute',
-        'Value',
-        'Units',
-    ])
+                Quill::make('semenabuy_top_text')->toolbar(["text", "color", "header", "list", "format", "media"])->title('Текст КП (верх)')->value($this->semenabuy_top_text),
+
+                Matrix::make('semenabuy_table')->columns([
+                    'Наименование культуры, сорт' => "",
+                    'Год урожая' => "",
+                    'Категория семян' => "",
+                    'Регион допуска' => "",
+                    'Количество, тн' => "",
+                    'Цена без обработки, руб/тн' => "",
+                    'Обработка препаратом (Имидор Про (0,75л/т)+ Тебу 60 (0,4 л/т)+ Нагро (0,5 л/т)' => "",
+
+                ])->value($this->semenabuy_table),
+
+                Quill::make('semenabuy_bottom_text')->toolbar(["text", "color", "header", "list", "format", "media"])->title('Текст КП (низ)')->value($this->semenabuy_bottom_text),
+
+                Button::make('Сохранить')->method('save_info')->type(Color::SUCCESS())
+
                 ])
         ];
+    }
+
+    public function save_info(Request $request) {
+
+        Option::where('name', "semenabuy_bottom_text")->update(['value' => $request->input("semenabuy_bottom_text")]);
+        Option::where('name', "semenabuy_top_text")->update(['value' => $request->input("semenabuy_top_text")]);
+        Option::where('name', "semenabuy_table")->update(['value' => $request->input("semenabuy_table")]);
+
+        Toast::info("Данные  сохранены");
     }
 }

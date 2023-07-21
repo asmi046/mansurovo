@@ -22,11 +22,24 @@ class SemenaAddSeeder extends Seeder
         DB::table("options")->insert(
             [
                 [
-                    "name" => "semenabuy",
+                    "name" => "semenabuy_bottom_text",
                     "type" => "rich",
-                    'title' => 'Информация о продаже семян',
-                    "value" => file_get_contents(public_path('texts//ZernaTable.html')),
-                    // "value" => "Тест <b>текста</b>",
+                    'title' => 'Информация о продаже семян (Низ)',
+                    "value" => file_get_contents(public_path('texts//SemenaBott.html')),
+                ],
+
+                [
+                    "name" => "semenabuy_top_text",
+                    "type" => "rich",
+                    'title' => 'Информация о продаже семян (верх)',
+                    "value" => file_get_contents(public_path('texts//SemenaTop.html')),
+                ],
+
+                [
+                    "name" => "semenabuy_table",
+                    "type" => "rich",
+                    'title' => 'Информация о продаже семян (таблица)',
+                    "value" => "",
                 ],
             ]);
     }
