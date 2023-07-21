@@ -32,11 +32,14 @@ class ViewServiceProvider extends ServiceProvider
                 $all_options = Option::all();
 
                 $opt = [];
+                $opt_json = [];
 
                 foreach ($all_options as $otion) {
                     $opt[$otion['name']] = $otion['value'];
+                    $opt_json[$otion['name']] = $otion['value_json'];
                 }
                 View::share('options', $opt);
+                View::share('options_json', $opt_json);
 
             // }
         });

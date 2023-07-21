@@ -20,7 +20,8 @@
             <div class="description_blk text_styles">
                 {!! $options['semenabuy_top_text'] !!}
                 @php
-                   $semena_table =  json_decode ($options['semenabuy_table'])
+                //    $semena_table =  $options_json['semenabuy_table']);
+                // var_dump($options_json['semenabuy_table']);
                 @endphp
 
                 <table>
@@ -37,15 +38,15 @@
                     </thead>
                     <tbody>
 
-                            @foreach ($semena_table as $item)
+                            @foreach ($options_json['semenabuy_table'] as $item)
                                 <tr>
-                                    <td>{{$item[0]}}</td>
-                                    <td>{{$item[1]}}</td>
-                                    <td>{{$item[2]}}</td>
-                                    <td>{{$item[3]}}</td>
-                                    <td>{{$item[4]}}</td>
-                                    <td>{{$item[5]}}</td>
-                                    <td>{{$item[6]}}</td>
+                                    <td>{{$item["Наименование культуры, сорт"]}}</td>
+                                    <td>{{$item["Год урожая"]}}</td>
+                                    <td>{{$item["Категория семян"]}}</td>
+                                    <td>{{$item["Регион допуска"]}}</td>
+                                    <td>{{$item["Количество, тн"]}}</td>
+                                    <td>{{$item["Цена без обработки, руб/тн"]}}</td>
+                                    <td>{{$item["Обработка препаратом (Имидор Про (0,75л/т)+ Тебу 60 (0,4 л/т)+ Нагро (0,5 л/т)"]}}</td>
                                 </tr>
                             @endforeach
 
