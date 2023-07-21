@@ -50,7 +50,7 @@ class SemenaBuyScreen extends Screen
         return [
             "semenabuy_bottom_text" => $semenabuy_bottom_text?$semenabuy_bottom_text->value:"",
             "semenabuy_top_text" => $semenabuy_top_text?$semenabuy_top_text->value:"",
-            "semenabuy_table" => $semenabuy_table?$semenabuy_table->value:""
+            "semenabuy_table" => $semenabuy_table?$semenabuy_table->value_json:""
         ];
     }
 
@@ -88,13 +88,13 @@ class SemenaBuyScreen extends Screen
                 Quill::make('semenabuy_top_text')->toolbar(["text", "color", "header", "list", "format", "media"])->title('Текст КП (верх)')->value($this->semenabuy_top_text),
 
                 Matrix::make('semenabuy_table')->columns([
-                    'Наименование культуры, сорт' => "",
-                    'Год урожая' => "",
-                    'Категория семян' => "",
-                    'Регион допуска' => "",
-                    'Количество, тн' => "",
-                    'Цена без обработки, руб/тн' => "",
-                    'Обработка препаратом (Имидор Про (0,75л/т)+ Тебу 60 (0,4 л/т)+ Нагро (0,5 л/т)' => "",
+                    'Наименование культуры, сорт',
+                    'Год урожая',
+                    'Категория семян',
+                    'Регион допуска',
+                    'Количество, тн',
+                    'Цена без обработки, руб/тн',
+                    'Обработка препаратом (Имидор Про (0,75л/т)+ Тебу 60 (0,4 л/т)+ Нагро (0,5 л/т)',
 
                 ])->value($this->semenabuy_table),
 
@@ -110,7 +110,7 @@ class SemenaBuyScreen extends Screen
 
         Option::where('name', "semenabuy_bottom_text")->update(['value' => $request->input("semenabuy_bottom_text")]);
         Option::where('name', "semenabuy_top_text")->update(['value' => $request->input("semenabuy_top_text")]);
-        Option::where('name', "semenabuy_table")->update(['value' => $request->input("semenabuy_table")]);
+        Option::where('name', "semenabuy_table")->update(['value_json' => $request->input("semenabuy_table")]);
 
         Toast::info("Данные  сохранены");
     }

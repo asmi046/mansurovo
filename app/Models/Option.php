@@ -14,6 +14,11 @@ class Option extends Model
     protected $fillable = [
         'name',
         'title',
-        'value'
+        'value',
+        'value_json'
+    ];
+
+    protected $casts = [
+        'value_json' => 'array',
     ];
 }
