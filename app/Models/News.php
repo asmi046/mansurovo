@@ -27,9 +27,8 @@ class News extends Model
 
     public function setSlugAttribute($value)
     {
-        if (empty($value))
-            $this->attributes['slug'] =  Str::slug($this->title);
-        else
-            $this->attributes['slug'] =  $value;
+        $title = (empty($value))?Str::slug($this->title):$value;
+        $this->attributes['slug'] =  $title."-".date("d-m-Y");
+
     }
 }
