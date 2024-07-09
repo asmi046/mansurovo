@@ -18,15 +18,15 @@
         <x-breadcrumbs :news="$info->title"></x-breadcrumbs>
 
         <div class="news_prev">
-            <div class="left">
-                <img src="{{$info->thumb}}" alt="{{$info->title}}">
-            </div>
-
             <div class="right">
                 <h1>{{$info->title}}</h1>
                 <p class="news_data">{{date("d.m.Y", strtotime($info->news_data))}}</p>
                 {!! $info->quote !!}
             </div>
+        </div>
+
+        <div class="news_img">
+            <img src="{{$info->thumb}}" alt="{{$info->title}}">
         </div>
 
         <div class="description_blk text_styles">

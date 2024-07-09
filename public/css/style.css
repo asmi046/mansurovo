@@ -4465,13 +4465,17 @@ transform: rotate(180deg);
     margin-bottom: 20px;
 }
 
-.news_prev .left {
-    flex: 1;
-}
-
 .news_prev .right {
+    flex: 1;
     padding: 20px;
     flex:1;
+}
+
+.news_img {
+    border: 2px solid #7eaf00;
+    width:50%;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .thancs_icon_box {
@@ -4495,7 +4499,9 @@ transform: rotate(180deg);
 }
 
 @media (max-width: 520px) {
-
+    .news_img {
+        width: 100%;
+    }
     .news_prev{
         flex-direction: column-reverse;
         max-height: unset;
