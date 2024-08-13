@@ -21,7 +21,7 @@
                 <h2>АО «Агрокомплекс «Мансурово»</h2>
                 <a href="tel:+74712540630" class="phone">+7 (4712) 54-06-30</a>
                 <a href="#" class="btn re_call">Заказать звонок</a>
-                <a href="mailto:info@mansurovoagro.ru" class="mail">info@mansurovoagro.ru</a>
+                <a href="mailto:info@mansurovogroup.ru" class="mail">info@mansurovogroup.ru</a>
 
                 <a href="{{asset('files/AK Mansurovo.pdf')}}" class="ca_card">Скачать карточку контрагента: АО «Агрокомплекс «Мансурово»</a>
                 <a href="{{asset('files/AKZ.pdf')}}" class="ca_card">Скачать карточку контрагента: ОАО «Александровский конный завод № 12»</a>

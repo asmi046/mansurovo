@@ -18,10 +18,10 @@ class SenderController extends Controller
 
         $send_adr = ["asmi046@gmail.com"];
 
-        if ($data['subject'] === "Покупка продукции" ) $send_adr[] = "sale@mansurovoagro.ru";
-        if ($data['subject'] === "Сотрудничество" ) $send_adr[] = "sale@mansurovoagro.ru";
-        if ($data['subject'] === "Карьера" ) $send_adr[] = "hr@mansurovoagro.ru";
-        if ($data['subject'] === "СМИ" ) $send_adr[] = "info@mansurovoagro.ru";
+        if ($data['subject'] === "Покупка продукции" ) $send_adr[] = "sale@mansurovogroup.ru";
+        if ($data['subject'] === "Сотрудничество" ) $send_adr[] = "sale@mansurovogroup.ru";
+        if ($data['subject'] === "Карьера" ) $send_adr[] = "hr@mansurovogroup.ru";
+        if ($data['subject'] === "СМИ" ) $send_adr[] = "info@mansurovogroup.ru";
 
         foreach ($send_adr as $adr) {
             Mail::to($adr)->send(new ConsultMail($data));

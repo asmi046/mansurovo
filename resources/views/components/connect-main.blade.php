@@ -15,8 +15,8 @@
                 <select-message-type></select-message-type>
                 <div class="connect-agro__block-contacts">
                     <a href="tel:+74712540630" class="connect-agro__block-contacts-phone">+7 (4712) 54-06-30</a>
-                    <a href="mailto:info@mansurovoagro.ru"
-                        class="connect-agro__block-contacts-email">info@mansurovoagro.ru</a>
+                    <a href="mailto:info@mansurovogroup.ru"
+                        class="connect-agro__block-contacts-email">info@mansurovogroup.ru</a>
                 </div>
             </div>
 
